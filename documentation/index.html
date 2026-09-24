@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — LOYALLOOP Customer Loyalty & Rewards Platform SaaS Template</title>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/logo.svg">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .doc-sidebar {
+      position: sticky;
+      top: 90px;
+      height: calc(100vh - 120px);
+      overflow-y: auto;
+    }
+    .doc-nav a {
+      color: var(--text-muted);
+      display: block;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+    }
+    .doc-nav a:hover,
+    .doc-nav a.active {
+      color: var(--primary);
+      background-color: var(--primary-subtle);
+    }
+    pre code {
+      background-color: var(--bg-surface-alt);
+      color: var(--text-main);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      display: block;
+      border: 1px solid var(--border-color);
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body class="bg-body">
+
+  <!-- Doc Header -->
+  <header class="site-header">
+    <div class="container-fluid px-lg-5 py-3 d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <a class="navbar-brand-custom" href="../index.html">
+          <img src="../assets/icons/logo.svg" alt="LOYALLOOP Logo" width="36" height="36" class="brand-icon">
+          <span>LOYALLOOP <span class="badge bg-primary fs-7 ms-2">Docs v1.0</span></span>
+        </a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout" title="Switch to RTL layout">RTL</button>
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+          <i class="bi bi-sun-fill theme-icon-dark"></i>
+        </button>
+        <a href="../index.html" class="btn btn-sm btn-primary-custom">Preview Template &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid px-lg-5 py-5">
+    <div class="row g-5">
+      <!-- Sidebar Navigation -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div class="doc-sidebar p-3 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+          <h4 class="h6 font-heading text-uppercase text-muted fw-bold mb-3 px-2">Table of Contents</h4>
+          <nav class="doc-nav d-flex flex-column gap-1">
+            <a href="#intro" class="active">1. Introduction &amp; Overview</a>
+            <a href="#structure">2. File Structure</a>
+            <a href="#design-system">3. Design Tokens &amp; CSS Variables</a>
+            <a href="#theme-toggle">4. Light / Dark Theme System</a>
+            <a href="#typography">5. Typography &amp; Fonts</a>
+            <a href="#javascript">6. JavaScript &amp; Animations (GSAP)</a>
+            <a href="#interactive">7. Interactive Components</a>
+            <a href="#forms">8. Forms &amp; Front-End Validation</a>
+            <a href="#customization">9. Customization &amp; Branding</a>
+            <a href="#credits">10. Sources &amp; Credits</a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Documentation Main Content -->
+      <main class="col-lg-9">
+        <!-- 1. Introduction -->
+        <section id="intro" class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom mb-5 shadow-custom-sm">
+          <span class="badge-pill-custom badge-primary-soft mb-2">CHAPTER 01</span>
+          <h1 class="h2 mb-3">Introduction &amp; Overview</h1>
+          <p class="lead">
+            <strong>LOYALLOOP</strong> is a premium, modern, commercial-grade Customer Loyalty &amp; Rewards Program Platform (SaaS) website template designed specifically for ThemeForest, TemplateMonster, Creative Market, and client software projects.
+          </p>
+          <p class="text-muted">
+            Engineered with HTML5, Bootstrap 5.3+, Vanilla CSS3 custom properties, and Vanilla JavaScript with GSAP micro-animations. It represents a state-of-the-art retail-tech and customer retention SaaS brand with 2 homepage variations, complete industry solutions, detailed feature breakdowns, interactive ROI calculators, categorized pricing, full resource hubs, and front-end authentication demos.
+          </p>
+        </section>
+
+        <!-- 2. File Structure -->
+        <section id="structure" class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom mb-5 shadow-custom-sm">
+          <span class="badge-pill-custom badge-primary-soft mb-2">CHAPTER 02</span>
+          <h2 class="h2 mb-3">File &amp; Folder Structure</h2>
+          <pre><code>loyalloop-loyalty-saas/
+├── index.html                  # Home 1: High-conversion SaaS landing
+├── home-2.html                 # Home 2: Editorial Loyalty Loop™ showcase
+├── features.html               # Comprehensive platform features
+├── feature-details.html        # Reusable deep-dive feature layout
+├── solutions.html              # Industry overview
+├── retail-loyalty.html         # Retail in-store loyalty solution
+├── restaurant-loyalty.html     # Restaurant &amp; dining rewards solution
+├── ecommerce-loyalty.html      # Ecommerce DTC loyalty solution
+├── membership-programs.html    # VIP tiered membership solution
+├── customer-rewards.html       # Customer perks &amp; vouchers solution
+├── retention-programs.html     # Automated RFM retention solution
+├── pricing.html                # Monthly/Annual pricing with calculator
+├── case-studies.html           # Case studies archive with filter tabs
+├── case-study-details.html     # Detailed case study story
+├── resources.html              # Resource center and hub
+├── loyalty-guide.html          # 10-Chapter strategic loyalty playbook
+├── faqs.html                   # Categorized accordion FAQ
+├── blog.html                   # Blog archive with categories &amp; search
+├── blog-details.html           # Full article details template
+├── about.html                  # Company story, values &amp; team
+├── contact.html                # Contact sales &amp; support with validation
+├── dashboard.html              # Merchant Dashboard (Overview &amp; Analytics)
+├── dashboard-tiers.html        # Reward Tiers &amp; Point Rules Configuration
+├── dashboard-engagement.html   # Customer Engagement &amp; Member CRM
+├── dashboard-redemptions.html  # Live Redemption Activity &amp; Fulfillment
+├── dashboard-billing.html      # Subscription Billing &amp; Invoice Receipts
+├── dashboard-settings.html     # Program Settings &amp; Developer API Keys
+├── login.html                  # Standalone login demo
+├── signup.html                 # Standalone signup demo with strength meter
+├── forgot-password.html        # Password reset demo
+├── 404.html                    # Creative 404 error page
+├── coming-soon.html            # Pre-launch page with live countdown
+├── assets/
+│   ├── css/                    # Bootstrap, icons, style.css
+│   ├── js/                     # Bootstrap, GSAP, main.js
+│   ├── images/                 # Loyalty cards, hero SVGs, avatars, case covers
+│   └── icons/                  # Logo SVG icon
+├── documentation/
+│   └── index.html              # This documentation file
+└── README.md                   # Quick start guide</code></pre>
+        </section>
+
+        <!-- 3. Design Tokens -->
+        <section id="design-system" class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom mb-5 shadow-custom-sm">
+          <span class="badge-pill-custom badge-primary-soft mb-2">CHAPTER 03</span>
+          <h2 class="h2 mb-3">Design Tokens &amp; CSS Variables</h2>
+          <p class="text-muted">
+            All color tokens, surface elevations, border radii, and shadows are defined as CSS custom properties in <code>assets/css/style.css</code>.
+          </p>
+          <pre><code>:root {
+  --primary: #4F46E5;            /* Royal Indigo */
+  --accent: #10B981;             /* Emerald Mint */
+  --reward-gold: #F59E0B;        /* Amber Gold */
+  --bg-body: #F8FAFC;            /* Light Mode Background */
+  --bg-surface: #FFFFFF;         /* Card Surface */
+  --text-main: #0F172A;          /* Charcoal Slate */
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Space Grotesk', sans-serif;
+}</code></pre>
+        </section>
+
+        <!-- 4. Theme Toggle -->
+        <section id="theme-toggle" class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom mb-5 shadow-custom-sm">
+          <span class="badge-pill-custom badge-primary-soft mb-2">CHAPTER 04</span>
+          <h2 class="h2 mb-3">Light / Dark Theme System</h2>
+          <p class="text-muted">
+            The template features an instant, flicker-free Light / Dark mode engine. The user's preference is detected via OS system settings (<code>prefers-color-scheme</code>) and persisted in browser <code>localStorage</code> under the key <code>loyalloop-theme-preference</code>.
+          </p>
+          <pre><code>// Activating Dark Mode dynamically via HTML attribute:
+&lt;html lang="en" data-theme="dark"&gt;</code></pre>
+        </section>
+
+        <!-- 5. Interactive Components -->
+        <section id="interactive" class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom mb-5 shadow-custom-sm">
+          <span class="badge-pill-custom badge-primary-soft mb-2">CHAPTER 05</span>
+          <h2 class="h2 mb-3">Interactive Components</h2>
+          <ul class="text-muted ps-3">
+            <li class="mb-2"><strong>Pricing Toggle:</strong> Switch between Monthly and Annual billing with instant price multipliers and 20% discount badges.</li>
+            <li class="mb-2"><strong>ROI &amp; Points Calculator:</strong> Dual range sliders estimating monthly incremental retention revenue and points generated.</li>
+            <li class="mb-2"><strong>Category Filter Buttons:</strong> Seamlessly filter Case Studies and Blog archives without page reloads.</li>
+            <li class="mb-2"><strong>Live Countdown Timer:</strong> Configurable countdown clock on <code>coming-soon.html</code>.</li>
+            <li class="mb-2"><strong>Password Strength Meter:</strong> Live password scoring on <code>signup.html</code>.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Credits -->
+        <section id="credits" class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+          <span class="badge-pill-custom badge-primary-soft mb-2">CHAPTER 06</span>
+          <h2 class="h2 mb-3">Sources &amp; Credits</h2>
+          <ul class="text-muted ps-3 mb-0">
+            <li class="mb-1"><strong>Bootstrap 5.3.3:</strong> UI Framework (<a href="https://getbootstrap.com" target="_blank" rel="noopener">getbootstrap.com</a>)</li>
+            <li class="mb-1"><strong>Bootstrap Icons 1.11.3:</strong> Icon System (<a href="https://icons.getbootstrap.com" target="_blank" rel="noopener">icons.getbootstrap.com</a>)</li>
+            <li class="mb-1"><strong>GSAP 3.12.5:</strong> Animation Library (<a href="https://greensock.com" target="_blank" rel="noopener">greensock.com</a>)</li>
+            <li class="mb-1"><strong>Google Fonts:</strong> Plus Jakarta Sans, Inter, Space Grotesk (<a href="https://fonts.google.com" target="_blank" rel="noopener">fonts.google.com</a>)</li>
+            <li><strong>Vectors &amp; UI Artwork:</strong> Custom-crafted SVG assets for LOYALLOOP.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Socials -->
+        <div class="col-lg-4">
+          <a class="navbar-brand-custom mb-3" href="../index.html">
+            <img src="../assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
+            <span>LOYALLOOP</span>
+          </a>
+          <p class="mb-3">
+            "Turn Every Purchase Into Loyalty." The modern retail-tech platform for high-engagement customer rewards, digital wallet passes, and retention marketing.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="social-link-btn" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Product -->
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="../features.html">Features</a></li>
+            <li><a href="../feature-details.html">Feature Details</a></li>
+            <li><a href="../solutions.html">Solutions</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+            <li><a href="../case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="../loyalty-guide.html">Loyalty Guide</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../faqs.html">FAQs</a></li>
+            <li><a href="../resources.html">Resource Hub</a></li>
+            <li><a href="../documentation/index.html">Documentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact Sales</a></li>
+            <li><a href="../login.html">Demo Login</a></li>
+            <li><a href="../signup.html">Create Account</a></li>
+            <li><a href="../coming-soon.html">Coming Soon</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">&copy; 2026 LOYALLOOP. All rights reserved. Built for modern retail-tech &amp; SaaS merchants.</p>
+        <div class="d-flex align-items-center gap-3">
+          <a href="../about.html" class="text-muted">Privacy Policy</a>
+          <span class="text-muted">&bull;</span>
+          <a href="../about.html" class="text-muted">Terms of Service</a>
+          <span class="text-muted">&bull;</span>
+          <a href="../about.html" class="text-muted">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

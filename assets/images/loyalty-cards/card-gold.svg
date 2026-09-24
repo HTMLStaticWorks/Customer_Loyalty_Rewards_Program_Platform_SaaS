@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="goldCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="60%" stop-color="#312E81" />
+      <stop offset="100%" stop-color="#4338CA" />
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <filter id="cardShadow" x="-20" y="-10" width="460" height="300" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#4338CA" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <g filter="url(#cardShadow)">
+    <rect x="10" y="10" width="400" height="240" rx="20" fill="url(#goldCardGrad)" stroke="rgba(253, 224, 71, 0.3)" stroke-width="1.5" />
+  </g>
+  <!-- Card Background Pattern -->
+  <circle cx="340" cy="50" r="120" fill="url(#goldAcc)" opacity="0.08" />
+  <circle cx="40" cy="220" r="80" fill="#10B981" opacity="0.1" />
+  
+  <!-- Top Row -->
+  <g transform="translate(36, 36)">
+    <rect width="32" height="32" rx="8" fill="url(#goldAcc)" />
+    <path d="M16 8L18 13L23 14L19 18L20 23L16 20L12 23L13 18L9 14L14 13Z" fill="#1E1B4B" />
+    <text x="44" y="16" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" letter-spacing="0.5">LOYALLOOP</text>
+    <text x="44" y="30" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10" font-weight="500">VIP MEMBER</text>
+    
+    <!-- NFC Chip & Tier -->
+    <rect x="290" y="4" width="40" height="24" rx="6" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1" />
+    <text x="310" y="20" fill="#FDE047" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">GOLD</text>
+  </g>
+  
+  <!-- Center: Points Balance -->
+  <g transform="translate(36, 105)">
+    <text x="0" y="12" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" font-weight="500">AVAILABLE BALANCE</text>
+    <text x="0" y="42" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">2,840 <tspan fill="#F59E0B" font-size="18" font-weight="700">PTS</tspan></text>
+    <text x="180" y="38" fill="#10B981" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Tier Status: Active (+15% Bonus)</text>
+  </g>
+  
+  <!-- Bottom Row: Cardholder & Barcode Mini -->
+  <g transform="translate(36, 185)">
+    <text x="0" y="12" fill="#64748B" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-transform="uppercase" letter-spacing="1">MEMBER NAME</text>
+    <text x="0" y="30" fill="#F1F5F9" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">ALEXANDRA CHEN</text>
+    
+    <text x="180" y="12" fill="#64748B" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-transform="uppercase" letter-spacing="1">MEMBER ID</text>
+    <text x="180" y="30" fill="#94A3B8" font-family="'Space Grotesk', monospace" font-size="13" font-weight="600">LL-8940-2026</text>
+    
+    <!-- Mini QR Icon -->
+    <rect x="296" y="-6" width="38" height="38" rx="8" fill="#FFFFFF" />
+    <path d="M302 0h10v10h-10zm2 2v6h6V2zm14-2h10v10h-10zm2 2v6h6V2zm-16 14h10v10h-10zm2 2v6h6v-6zm14 0h4v4h-4zm6 0h4v10h-4zm-6 6h4v4h-4z" fill="#0F172A" />
+  </g>
+</svg>

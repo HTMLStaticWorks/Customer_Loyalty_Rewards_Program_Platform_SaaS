@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="rwVipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="54" fill="#EEF2FF" stroke="#6366F1" stroke-width="2" />
+  <circle cx="60" cy="60" r="44" fill="url(#rwVipGrad)" />
+  <!-- VIP Star Badge -->
+  <path d="M60 38L65 50L78 51L68 60L71 73L60 66L49 73L52 60L42 51L55 50Z" fill="#FDE047" />
+  <circle cx="60" cy="57" r="5" fill="#1E1B4B" />
+</svg>

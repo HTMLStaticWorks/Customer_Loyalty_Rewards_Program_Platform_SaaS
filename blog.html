@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail Tech & Customer Loyalty Blog | LOYALLOOP</title>
+  <meta name="description"
+    content="Read expert insights on customer retention, digital wallet passes, rewards psychology, and modern retail marketing strategies.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl py-3" aria-label="Main navigation">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand-custom" href="index.html">
+          <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="36" height="36" class="brand-icon">
+          <span>LOYALLOOP</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 d-xl-none">
+          <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout"
+            title="Switch to RTL layout">RTL</button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+            <i class="bi bi-sun-fill theme-icon-dark"></i>
+          </button>
+          <button class="navbar-toggler-custom" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="mainNavCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="#" id="homeDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item dropdown-item-custom" href="index.html"><span class="item-icon"><i
+                        class="bi bi-grid-1x2"></i></span>
+                    <div>
+                      <div class="fw-bold">Home 1</div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="home-2.html"><span class="item-icon"><i
+                        class="bi bi-arrow-repeat"></i></span>
+                    <div>
+                      <div class="fw-bold">Home 2</div>
+                    </div>
+                  </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="features.html">Features</a></li>
+
+            <!-- Solutions -->
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="solutions.html">Solutions</a>
+            </li>
+
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="case-studies.html">Case Studies</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle active" href="#" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item dropdown-item-custom" href="loyalty-guide.html"><span class="item-icon"><i
+                        class="bi bi-book"></i></span>
+                    <div>
+                      <div class="fw-bold">Loyalty Guide</div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="faqs.html"><span class="item-icon"><i
+                        class="bi bi-question-circle"></i></span>
+                    <div>
+                      <div class="fw-bold">FAQs</div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item dropdown-item-custom active" href="blog.html"><span class="item-icon"><i
+                        class="bi bi-newspaper"></i></span>
+                    <div>
+                      <div class="fw-bold">Blog</div>
+                    </div>
+                  </a></li>
+
+                <li>
+                  <hr class="dropdown-divider my-2">
+                </li>
+                <li><a class="dropdown-item dropdown-item-custom" href="resources.html"><span class="item-icon"><i
+                        class="bi bi-collection"></i></span>
+                    <div>
+                      <div class="fw-bold">Resource Center</div>
+                    </div>
+                  </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+            <button class="rtl-toggle-btn d-none d-xl-inline-flex" type="button" aria-label="Switch to RTL layout"
+              title="Switch to RTL layout">RTL</button>
+            <button class="theme-toggle-btn d-none d-xl-inline-flex" type="button" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+              <i class="bi bi-sun-fill theme-icon-dark"></i>
+            </button>
+            <a href="signup.html" class="btn btn-primary-custom">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO & SEARCH/FILTERS -->
+    <section class="py-5 bg-surface-alt border-bottom border-custom text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="badge-pill-custom badge-primary-soft mb-3">Insights &amp; Retention Engineering</span>
+            <h1 class="display-4 fw-extrabold mb-3">The LOYALLOOP Blog</h1>
+            <p class="lead mb-4">
+              Actionable essays, retail trends, reward design psychology, and technical guides for modern merchants.
+            </p>
+
+            <!-- Filter Buttons -->
+            <div class="filter-btn-group justify-content-center" data-target-grid="#blogGrid">
+              <button type="button" class="filter-btn active" data-filter="all">All Topics</button>
+              <button type="button" class="filter-btn" data-filter="retail">Retail Strategy</button>
+              <button type="button" class="filter-btn" data-filter="ecommerce">Ecommerce DTC</button>
+              <button type="button" class="filter-btn" data-filter="dining">Restaurant Tech</button>
+              <button type="button" class="filter-btn" data-filter="wallet">Wallet Passes</button>
+              <button type="button" class="filter-btn" data-filter="retention">Retention RFM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="py-5 bg-body border-bottom border-custom">
+      <div class="container">
+        <div class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom shadow-custom-card">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <img src="assets/images/blog/blog-1.svg" alt="Featured Article Cover"
+                class="w-100 rounded-custom-lg shadow-custom-sm">
+            </div>
+            <div class="col-lg-6">
+              <span class="badge-pill-custom badge-primary-soft mb-2">FEATURED ESSAY</span>
+              <div class="blog-meta">
+                <span><i class="bi bi-clock me-1"></i> 6 min read</span>
+                <span>&bull;</span>
+                <span>September 2026</span>
+              </div>
+              <h2 class="h2 mb-3">
+                <a href="blog-details.html" class="text-main">The Psychology of Points &amp; Tier Rewards in Modern
+                  Retail</a>
+              </h2>
+              <p class="text-muted mb-4">
+                Why customers value progress over static discounts, and how the end-goal effect can be harnessed to
+                increase 30-day repeat purchase frequency by 40%+.
+              </p>
+              <a href="blog-details.html" class="btn btn-primary-custom">Read Article <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS GRID -->
+    <section class="section-padding bg-body">
+      <div class="container">
+        <div class="row g-4 filterable-grid" id="blogGrid">
+          <!-- Post 2 -->
+          <div class="col-md-6 col-lg-6 filter-item" data-category="ecommerce">
+            <div class="blog-card">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/blog-2.svg" alt="Blog 2 Cover">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span><i class="bi bi-clock me-1"></i> 5 min read</span>
+                  <span>&bull;</span>
+                  <span>Ecommerce DTC</span>
+                </div>
+                <h3 class="h5 mb-2"><a href="blog-details.html" class="text-main">Why Points Alone Won't Save Your DTC
+                    Churn</a></h3>
+                <p class="text-muted small mb-4">Discover how experiential perks and VIP drops outperform pure cashback
+                  in luxury and commerce.</p>
+                <a href="blog-details.html" class="mt-auto fw-bold text-primary">Read Article <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div class="col-md-6 col-lg-6 filter-item" data-category="dining">
+            <div class="blog-card">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/blog-3.svg" alt="Blog 3 Cover">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span><i class="bi bi-clock me-1"></i> 4 min read</span>
+                  <span>&bull;</span>
+                  <span>Restaurant Tech</span>
+                </div>
+                <h3 class="h5 mb-2"><a href="blog-details.html" class="text-main">Transforming Casual Dining Guests Into
+                    Weekly Regulars</a></h3>
+                <p class="text-muted small mb-4">How table QR check-ins and digital coffee stamp passes reduce server
+                  friction and drive repeat bookings.</p>
+                <a href="blog-details.html" class="mt-auto fw-bold text-primary">Read Article <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4 -->
+          <div class="col-md-6 col-lg-6 filter-item" data-category="wallet">
+            <div class="blog-card">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/blog-4.svg" alt="Blog 4 Cover">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span><i class="bi bi-clock me-1"></i> 7 min read</span>
+                  <span>&bull;</span>
+                  <span>Wallet Passes</span>
+                </div>
+                <h3 class="h5 mb-2"><a href="blog-details.html" class="text-main">Why Plastic Loyalty Cards Are Dead in
+                    2026</a></h3>
+                <p class="text-muted small mb-4">The rise of native Apple &amp; Google Wallet passes with geofenced
+                  lock-screen notifications.</p>
+                <a href="blog-details.html" class="mt-auto fw-bold text-primary">Read Article <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 5 -->
+          <div class="col-md-6 col-lg-6 filter-item" data-category="retail">
+            <div class="blog-card">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/blog-5.svg" alt="Blog 5 Cover">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span><i class="bi bi-clock me-1"></i> 5 min read</span>
+                  <span>&bull;</span>
+                  <span>Retail Strategy</span>
+                </div>
+                <h3 class="h5 mb-2"><a href="blog-details.html" class="text-main">Experiential Rewards vs Margin-Cutting
+                    Discounts</a></h3>
+                <p class="text-muted small mb-4">Protecting retail profitability while building higher perceived
+                  customer prestige.</p>
+                <a href="blog-details.html" class="mt-auto fw-bold text-primary">Read Article <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 6 -->
+          <div class="col-md-6 col-lg-6 filter-item" data-category="retention">
+            <div class="blog-card">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/blog-6.svg" alt="Blog 6 Cover">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span><i class="bi bi-clock me-1"></i> 6 min read</span>
+                  <span>&bull;</span>
+                  <span>Retention RFM</span>
+                </div>
+                <h3 class="h5 mb-2"><a href="blog-details.html" class="text-main">Mastering Automated Win-Back
+                    Campaigns</a></h3>
+                <p class="text-muted small mb-4">How RFM segmentation recovers up to 41% of at-risk customers before
+                    they defect.</p>
+                <a href="blog-details.html" class="mt-auto fw-bold text-primary">Read Article <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 7 -->
+          <div class="col-md-6 col-lg-6 filter-item" data-category="retail">
+            <div class="blog-card">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/blog-7.svg" alt="Blog 7 Cover">
+              </div>
+              <div class="blog-body">
+                <div class="blog-meta">
+                  <span><i class="bi bi-clock me-1"></i> 5 min read</span>
+                  <span>&bull;</span>
+                  <span>Retail Strategy</span>
+                </div>
+                <h3 class="h5 mb-2"><a href="blog-details.html" class="text-main">Unifying Cloud POS &amp; Smartphone
+                    Passes</a></h3>
+                <p class="text-muted small mb-4">How sub-second point updates and dynamic lockscreen passes drive
+                  unprecedented loyalty.</p>
+                <a href="blog-details.html" class="mt-auto fw-bold text-primary">Read Article <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Blog pagination" class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Socials -->
+        <div class="col-lg-4">
+          <a class="navbar-brand-custom mb-3" href="index.html">
+            <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
+            <span>LOYALLOOP</span>
+          </a>
+          <p class="mb-3">
+            "Turn Every Purchase Into Loyalty." The modern retail-tech platform for high-engagement customer rewards,
+            digital wallet passes, and retention marketing.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="social-link-btn" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Product -->
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="features.html">Features</a></li>
+            <li><a href="feature-details.html">Feature Details</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="loyalty-guide.html">Loyalty Guide</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="resources.html">Resource Hub</a></li>
+            <li><a href="documentation/index.html">Documentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Sales</a></li>
+            <li><a href="login.html">Demo Login</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">&copy; 2026 LOYALLOOP. All rights reserved. Built for modern retail-tech &amp; SaaS merchants.
+        </p>
+        <div class="d-flex align-items-center gap-3">
+          <a href="about.html" class="text-muted">Privacy Policy</a>
+          <span class="text-muted">&bull;</span>
+          <a href="about.html" class="text-muted">Terms of Service</a>
+          <span class="text-muted">&bull;</span>
+          <a href="about.html" class="text-muted">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

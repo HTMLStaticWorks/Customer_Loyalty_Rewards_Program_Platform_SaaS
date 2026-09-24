@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Engagement — Merchant Dashboard | LOYALLOOP</title>
+  <meta name="description"
+    content="Track customer engagement analytics, member retention rates, visit frequency, lifetime value, and automated re-engagement campaigns.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-body">
+
+  <div class="dashboard-wrapper">
+    <!-- LEFT SIDEBAR MENU (Full Height Top to Bottom) -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div>
+        <!-- Sidebar Brand Header -->
+        <div class="dashboard-sidebar-header d-flex align-items-center justify-content-between">
+          <a class="navbar-brand-custom" href="index.html">
+            <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="34" height="34" class="brand-icon">
+            <span>LOYALLOOP</span>
+          </a>
+          <button class="btn btn-sm btn-ghost-custom d-lg-none" id="closeSidebarBtn" aria-label="Close sidebar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="dashboard-nav" id="dashboardNav">
+          <a href="dashboard.html" class="dashboard-nav-item">
+            <i class="bi bi-speedometer2"></i>
+            <span>Overview &amp; Analytics</span>
+          </a>
+          <a href="dashboard-tiers.html" class="dashboard-nav-item">
+            <i class="bi bi-layers-half"></i>
+            <span>Reward Tiers &amp; Rules</span>
+          </a>
+          <a href="dashboard-engagement.html" class="dashboard-nav-item active">
+            <i class="bi bi-people"></i>
+            <span>Customers</span>
+          </a>
+          <a href="dashboard-redemptions.html" class="dashboard-nav-item">
+            <i class="bi bi-gift"></i>
+            <span>Redemption Activity</span>
+          </a>
+          <a href="dashboard-billing.html" class="dashboard-nav-item">
+            <i class="bi bi-credit-card"></i>
+            <span>Subscription &amp; Billing</span>
+          </a>
+          <a href="dashboard-settings.html" class="dashboard-nav-item">
+            <i class="bi bi-sliders"></i>
+            <span>Settings &amp; API Keys</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Sidebar Footer with Preferences, User Profile & Logout -->
+      <div class="dashboard-sidebar-footer">
+        <!-- Theme & RTL Controls -->
+        <div
+          class="d-flex align-items-center justify-content-between p-2 mb-3 bg-surface-alt rounded-custom-md border-custom">
+          <span class="small font-heading fw-bold text-muted">Preferences</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout"
+              title="Switch to RTL layout">RTL</button>
+            <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+              <i class="bi bi-sun-fill theme-icon-dark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Store Admin Profile -->
+        <div class="d-flex align-items-center gap-3 mb-3 px-1">
+          <div class="avatar-circle bg-primary text-white font-heading fw-bold"
+            style="width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            AC
+          </div>
+          <div class="overflow-hidden">
+            <div class="fw-bold text-main text-truncate small">Store Admin</div>
+            <div class="text-muted small text-truncate">admin@aromacafe.com</div>
+          </div>
+        </div>
+
+        <!-- Back to Website & Logout Buttons -->
+        <div class="d-flex flex-column gap-2">
+          <a href="login.html"
+            class="btn btn-outline-danger btn-sm w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT (NO HEADER) -->
+    <main class="dashboard-main">
+      <div
+        class="dashboard-mobile-bar d-flex d-xl-none align-items-center justify-content-between p-3 border-bottom border-custom bg-surface sticky-top">
+        <a class="navbar-brand-custom" href="index.html">
+          <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
+          <span>LOYALLOOP</span>
+        </a>
+        <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
+      <div class="dashboard-content">
+        <!-- Page Title & Actions Strip -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+          <div>
+            <h1 class="h3 mb-1 fw-bold">Customer Engagement &amp; Member CRM</h1>
+            <p class="text-muted small mb-0">Monitor customer loyalty metrics, repeat purchase habits, and retention
+              cohorts.</p>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-custom btn-sm rounded-pill px-3"
+              onclick="alert('Exporting customer CSV...');">
+              <i class="bi bi-file-earmark-spreadsheet me-1"></i> Export Members
+            </button>
+            <button class="btn btn-primary-custom btn-sm rounded-pill px-3"
+              onclick="alert('Opening Broadcast Message Composer...');">
+              <i class="bi bi-send me-1"></i> Send Push Broadcast
+            </button>
+          </div>
+        </div>
+
+        <!-- Engagement Metrics Grid -->
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6 col-xl-3">
+            <div class="metric-card">
+              <span class="text-muted small font-heading fw-bold d-block mb-1">MEMBER RETENTION RATE</span>
+              <div class="h2 mb-1 fw-bold text-accent-custom">84.2%</div>
+              <span class="small text-muted"><i class="bi bi-arrow-up text-success"></i> +6.8% vs non-members</span>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-3">
+            <div class="metric-card">
+              <span class="text-muted small font-heading fw-bold d-block mb-1">AVG PURCHASE FREQUENCY</span>
+              <div class="h2 mb-1 fw-bold text-primary">3.4x / mo</div>
+              <span class="small text-muted"><i class="bi bi-arrow-up text-success"></i> +1.2 visits/month</span>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-3">
+            <div class="metric-card">
+              <span class="text-muted small font-heading fw-bold d-block mb-1">AVERAGE ORDER VALUE LIFT</span>
+              <div class="h2 mb-1 fw-bold text-gold-custom">+$18.40</div>
+              <span class="small text-muted"><i class="bi bi-arrow-up text-success"></i> +32% basket size</span>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-3">
+            <div class="metric-card">
+              <span class="text-muted small font-heading fw-bold d-block mb-1">WIN-BACK CAMPAIGN ROI</span>
+              <div class="h2 mb-1 fw-bold text-info">38.5%</div>
+              <span class="small text-muted">Re-engaged lapsed guests</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Automated Re-engagement Triggers -->
+        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm mb-4">
+          <h2 class="h5 mb-3">Active Retention Automations</h2>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold"><i class="bi bi-cake2 text-accent-custom me-1"></i> Birthday Auto-Gift</span>
+                  <span class="badge bg-success-subtle text-success">Active</span>
+                </div>
+                <p class="small text-muted mb-2">Pushes a free beverage pass to Apple/Google Wallet 7 days.</p>
+                <small class="text-primary font-heading fw-semibold">91% Claim Rate &bull; 842 Sent</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold"><i class="bi bi-hourglass-split text-warning me-1"></i> 30-Day Inactivity
+                    Nudge</span>
+                  <span class="badge bg-success-subtle text-success">Active</span>
+                </div>
+                <p class="small text-muted mb-2">Sends a "We miss you" push note with 100 bonus points if no visit in 30
+                  days.</p>
+                <small class="text-primary font-heading fw-semibold">42% Returned &bull; 1,290 Sent</small>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="fw-bold"><i class="bi bi-trophy text-primary me-1"></i> Tier Level-Up Reward</span>
+                  <span class="badge bg-success-subtle text-success">Active</span>
+                </div>
+                <p class="small text-muted mb-2">Congratulates customer with instant VIP reward voucher upon tier
+                  advancement.</p>
+                <small class="text-primary font-heading fw-semibold">98% Satisfaction &bull; 310 Sent</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member Directory Table -->
+        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
+            <h2 class="h5 mb-0">Loyalty Member Directory (24,850 Enrolled)</h2>
+            <div class="d-flex gap-2">
+              <input type="text" class="form-control form-control-custom form-control-sm"
+                placeholder="Search by name, email, or pass ID..." style="width: 260px;">
+              <select class="form-select form-select-sm form-control-custom" style="width: auto;">
+                <option selected>All Tiers</option>
+                <option>Platinum Elite</option>
+                <option>Gold VIP</option>
+                <option>Silver Member</option>
+                <option>Bronze</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="table-light">
+                <tr class="text-uppercase small font-heading">
+                  <th>Member Name</th>
+                  <th>Current Tier</th>
+                  <th>Points Balance</th>
+                  <th>Visit Frequency</th>
+                  <th>Lifetime Spend</th>
+                  <th>Wallet Status</th>
+                  <th class="text-end">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="avatar-circle bg-primary-subtle text-primary fw-bold"
+                        style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        SJ</div>
+                      <div>
+                        <div class="fw-bold">Sarah Jenkins</div>
+                        <small class="text-muted">sarah.j@gmail.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-primary">Platinum Elite</span></td>
+                  <td><span class="fw-bold font-mono text-primary">12,450 pts</span></td>
+                  <td>6.2 visits / mo</td>
+                  <td>$1,840.00</td>
+                  <td><span class="badge bg-success-subtle text-success"><i class="bi bi-apple me-1"></i> Apple
+                      Wallet</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Issuing bonus points to Sarah...');">+
+                      Issue Points</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="avatar-circle bg-warning-subtle text-warning fw-bold"
+                        style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        MC</div>
+                      <div>
+                        <div class="fw-bold">Marcus Chen</div>
+                        <small class="text-muted">mchen.design@outlook.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-warning text-dark">Gold VIP</span></td>
+                  <td><span class="fw-bold font-mono text-primary">6,820 pts</span></td>
+                  <td>4.1 visits / mo</td>
+                  <td>$960.50</td>
+                  <td><span class="badge bg-info-subtle text-info"><i class="bi bi-google me-1"></i> Google
+                      Wallet</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom"
+                      onclick="alert('Issuing bonus points to Marcus...');">+ Issue Points</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="avatar-circle bg-info-subtle text-info fw-bold"
+                        style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        ER</div>
+                      <div>
+                        <div class="fw-bold">Elena Rostova</div>
+                        <small class="text-muted">elena.r@fashionco.io</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-info">Silver Member</span></td>
+                  <td><span class="fw-bold font-mono text-primary">2,340 pts</span></td>
+                  <td>2.8 visits / mo</td>
+                  <td>$420.00</td>
+                  <td><span class="badge bg-success-subtle text-success"><i class="bi bi-apple me-1"></i> Apple
+                      Wallet</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Issuing bonus points to Elena...');">+
+                      Issue Points</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="avatar-circle bg-secondary-subtle text-secondary fw-bold"
+                        style="width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        DM</div>
+                      <div>
+                        <div class="fw-bold">David Miller</div>
+                        <small class="text-muted">david.m88@yahoo.com</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-secondary">Bronze</span></td>
+                  <td><span class="fw-bold font-mono text-primary">650 pts</span></td>
+                  <td>1.5 visits / mo</td>
+                  <td>$115.00</td>
+                  <td><span class="badge bg-secondary-subtle text-muted">Web Pass</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Issuing bonus points to David...');">+
+                      Issue Points</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript Dependencies -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+      const dashboardSidebar = document.getElementById('dashboardSidebar');
+
+      if (toggleSidebarBtn && dashboardSidebar) {
+        toggleSidebarBtn.addEventListener('click', () => {
+          dashboardSidebar.classList.toggle('show');
+        });
+      }
+      if (closeSidebarBtn && dashboardSidebar) {
+        closeSidebarBtn.addEventListener('click', () => {
+          dashboardSidebar.classList.remove('show');
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reward Tiers &amp; Point Rules — Merchant Dashboard | LOYALLOOP</title>
+  <meta name="description"
+    content="Configure reward tiers, point multipliers, earning ratios, spending thresholds, and perks for your customer loyalty program.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-body">
+
+  <div class="dashboard-wrapper">
+    <!-- LEFT SIDEBAR MENU (Full Height Top to Bottom) -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div>
+        <!-- Sidebar Brand Header -->
+        <div class="dashboard-sidebar-header d-flex align-items-center justify-content-between">
+          <a class="navbar-brand-custom" href="index.html">
+            <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="34" height="34" class="brand-icon">
+            <span>LOYALLOOP</span>
+          </a>
+          <button class="btn btn-sm btn-ghost-custom d-lg-none" id="closeSidebarBtn" aria-label="Close sidebar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="dashboard-nav" id="dashboardNav">
+          <a href="dashboard.html" class="dashboard-nav-item">
+            <i class="bi bi-speedometer2"></i>
+            <span>Overview &amp; Analytics</span>
+          </a>
+          <a href="dashboard-tiers.html" class="dashboard-nav-item active">
+            <i class="bi bi-layers-half"></i>
+            <span>Reward Tiers &amp; Rules</span>
+          </a>
+          <a href="dashboard-engagement.html" class="dashboard-nav-item">
+            <i class="bi bi-people"></i>
+            <span>Customers</span>
+          </a>
+          <a href="dashboard-redemptions.html" class="dashboard-nav-item">
+            <i class="bi bi-gift"></i>
+            <span>Redemption Activity</span>
+          </a>
+          <a href="dashboard-billing.html" class="dashboard-nav-item">
+            <i class="bi bi-credit-card"></i>
+            <span>Subscription &amp; Billing</span>
+          </a>
+          <a href="dashboard-settings.html" class="dashboard-nav-item">
+            <i class="bi bi-sliders"></i>
+            <span>Settings &amp; API Keys</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Sidebar Footer with Preferences, User Profile & Logout -->
+      <div class="dashboard-sidebar-footer">
+        <!-- Theme & RTL Controls -->
+        <div
+          class="d-flex align-items-center justify-content-between p-2 mb-3 bg-surface-alt rounded-custom-md border-custom">
+          <span class="small font-heading fw-bold text-muted">Preferences</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout"
+              title="Switch to RTL layout">RTL</button>
+            <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+              <i class="bi bi-sun-fill theme-icon-dark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Store Admin Profile -->
+        <div class="d-flex align-items-center gap-3 mb-3 px-1">
+          <div class="avatar-circle bg-primary text-white font-heading fw-bold"
+            style="width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            AC
+          </div>
+          <div class="overflow-hidden">
+            <div class="fw-bold text-main text-truncate small">Store Admin</div>
+            <div class="text-muted small text-truncate">admin@aromacafe.com</div>
+          </div>
+        </div>
+
+        <!-- Back to Website & Logout Buttons -->
+        <div class="d-flex flex-column gap-2">
+          <a href="login.html"
+            class="btn btn-outline-danger btn-sm w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT (NO HEADER) -->
+    <main class="dashboard-main">
+      <div
+        class="dashboard-mobile-bar d-flex d-xl-none align-items-center justify-content-between p-3 border-bottom border-custom bg-surface sticky-top">
+        <a class="navbar-brand-custom" href="index.html">
+          <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
+          <span>LOYALLOOP</span>
+        </a>
+        <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
+      <div class="dashboard-content">
+        <!-- Page Title & Actions Strip -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+          <div>
+            <h1 class="h3 mb-1 fw-bold">Configuring Reward Tiers &amp; Point Rules</h1>
+            <p class="text-muted small mb-0">Set point multipliers, earning ratios, spending thresholds, and tier
+              benefits for your customers.</p>
+          </div>
+          <button class="btn btn-primary-custom btn-sm rounded-pill px-4"
+            onclick="alert('Opening Tier & Rule Creator Wizard...');">
+            <i class="bi bi-plus-circle me-1"></i> Add Custom Tier Rule
+          </button>
+        </div>
+
+        <!-- Point Multiplier Rules Grid -->
+        <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <div class="rule-card">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="badge bg-primary p-2 rounded-custom-sm fs-5"><i class="bi bi-cash-coin"></i></div>
+                <div>
+                  <h2 class="h6 mb-0">Base Earning Ratio</h2>
+                  <span class="small text-muted">10 Points per $1.00 USD</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Customers automatically earn 10 points for every dollar spent in-store or
+                online.</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="ruleBase" checked>
+                <label class="form-check-label small fw-bold" for="ruleBase">Rule Active</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="rule-card">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="badge bg-accent-subtle text-accent-custom p-2 rounded-custom-sm fs-5"><i
+                    class="bi bi-cake2"></i></div>
+                <div>
+                  <h2 class="h6 mb-0">Birthday 2x Multiplier</h2>
+                  <span class="small text-muted">Double Points Month</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Members get 20 points per $1 during their entire birthday month
+                automatically.</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="ruleBday" checked>
+                <label class="form-check-label small fw-bold" for="ruleBday">Rule Active</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="rule-card">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="badge bg-gold-subtle text-gold-custom p-2 rounded-custom-sm fs-5"><i
+                    class="bi bi-lightning-charge"></i></div>
+                <div>
+                  <h2 class="h6 mb-0">Happy Hour Boost</h2>
+                  <span class="small text-muted">Fri 4:00 PM - 8:00 PM</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Instant 1.5x bonus points on Friday evening orders to drive off-peak
+                visits.</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="ruleHH" checked>
+                <label class="form-check-label small fw-bold" for="ruleHH">Rule Active</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="rule-card">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="badge bg-info-subtle text-info p-2 rounded-custom-sm fs-5"><i class="bi bi-person-plus"></i>
+                </div>
+                <div>
+                  <h2 class="h6 mb-0">Member Referral Bonus</h2>
+                  <span class="small text-muted">500 Bonus Pts / Friend</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Rewarded when an invited friend makes their first qualifying store
+                purchase.</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="ruleRef" checked>
+                <label class="form-check-label small fw-bold" for="ruleRef">Rule Active</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="rule-card">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="badge bg-warning-subtle text-warning p-2 rounded-custom-sm fs-5"><i
+                    class="bi bi-wallet2"></i></div>
+                <div>
+                  <h2 class="h6 mb-0">Digital Wallet Pass Add</h2>
+                  <span class="small text-muted">250 Welcome Pts</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Instant reward when customer adds loyalty card to Apple or Google Wallet.
+              </p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="ruleWallet" checked>
+                <label class="form-check-label small fw-bold" for="ruleWallet">Rule Active</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="rule-card">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="badge bg-danger-subtle text-danger p-2 rounded-custom-sm fs-5"><i
+                    class="bi bi-arrow-repeat"></i></div>
+                <div>
+                  <h2 class="h6 mb-0">Win-Back Surge</h2>
+                  <span class="small text-muted">3x Point Multiplier</span>
+                </div>
+              </div>
+              <p class="small text-muted mb-3">Automated email trigger offering 3x points on return visits for lapsed
+                guests.</p>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="ruleWinback" checked>
+                <label class="form-check-label small fw-bold" for="ruleWinback">Rule Active</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tiers Structure Table -->
+        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h5 mb-0">Active Tier Levels &amp; Benefits</h2>
+            <span class="text-muted small">4 Tiers Defined</span>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <thead class="table-light">
+                <tr class="text-uppercase small font-heading">
+                  <th>Tier Name</th>
+                  <th>Threshold</th>
+                  <th>Multiplier</th>
+                  <th>Key Member Perks</th>
+                  <th>Enrolled Members</th>
+                  <th>Status</th>
+                  <th class="text-end">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-shield-fill text-secondary fs-5"></i>
+                      <span class="fw-bold">Bronze Member</span>
+                    </div>
+                  </td>
+                  <td>0 – 999 pts</td>
+                  <td><span class="badge bg-secondary">1.0x Base</span></td>
+                  <td>Free Registration Gift, Digital Wallet Pass</td>
+                  <td>14,200 members</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Editing Bronze Tier...');"><i
+                        class="bi bi-pencil"></i> Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-shield-fill text-info fs-5"></i>
+                      <span class="fw-bold">Silver Member</span>
+                    </div>
+                  </td>
+                  <td>1,000 – 4,999 pts</td>
+                  <td><span class="badge bg-info">1.25x Multiplier</span></td>
+                  <td>10% Off Monthly Voucher, Birthday Double Points</td>
+                  <td>6,500 members</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Editing Silver Tier...');"><i
+                        class="bi bi-pencil"></i> Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-shield-fill text-warning fs-5"></i>
+                      <span class="fw-bold">Gold VIP</span>
+                    </div>
+                  </td>
+                  <td>5,000 – 9,999 pts</td>
+                  <td><span class="badge bg-warning text-dark">1.5x Multiplier</span></td>
+                  <td>Free Specialty Drinks, Skip-the-Line, Secret Perks</td>
+                  <td>3,100 members</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Editing Gold Tier...');"><i
+                        class="bi bi-pencil"></i> Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-shield-fill text-primary fs-5"></i>
+                      <span class="fw-bold">Platinum Elite</span>
+                    </div>
+                  </td>
+                  <td>10,000+ pts</td>
+                  <td><span class="badge bg-primary">2.0x Multiplier</span></td>
+                  <td>Personal Concierge, Free Delivery, Secret Tastings</td>
+                  <td>1,050 members</td>
+                  <td><span class="badge bg-success-subtle text-success">Active</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-custom" onclick="alert('Editing Platinum Tier...');"><i
+                        class="bi bi-pencil"></i> Edit</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Redemption Thresholds Card -->
+        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+          <h2 class="h5 mb-3">Redemption Conversion &amp; Expiration Policies</h2>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label class="form-label-custom">Points to Currency Ratio</label>
+              <div class="input-group">
+                <span class="input-group-text bg-surface-alt border-custom">100 Pts =</span>
+                <input type="text" class="form-control form-control-custom" value="$1.00 USD">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label-custom">Minimum Redemption Threshold</label>
+              <div class="input-group">
+                <input type="text" class="form-control form-control-custom" value="500">
+                <span class="input-group-text bg-surface-alt border-custom">Points ($5.00)</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label-custom">Point Expiration Policy</label>
+              <select class="form-select form-control-custom">
+                <option selected>12 Months from Earning Date</option>
+                <option>24 Months</option>
+                <option>Never Expire</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-3 text-end">
+            <button class="btn btn-primary-custom btn-sm rounded-pill px-4"
+              onclick="alert('Policies updated successfully!');">Save Threshold Settings</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript Dependencies -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+      const dashboardSidebar = document.getElementById('dashboardSidebar');
+
+      if (toggleSidebarBtn && dashboardSidebar) {
+        toggleSidebarBtn.addEventListener('click', () => {
+          dashboardSidebar.classList.toggle('show');
+        });
+      }
+      if (closeSidebarBtn && dashboardSidebar) {
+        closeSidebarBtn.addEventListener('click', () => {
+          dashboardSidebar.classList.remove('show');
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

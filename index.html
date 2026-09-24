@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOYALLOOP — Turn Every Purchase Into Loyalty | Customer Loyalty & Rewards Platform SaaS</title>
+  <meta name="description"
+    content="LOYALLOOP is the modern retail-tech and customer engagement SaaS platform. Build loyalty programs, reward repeat purchases, and increase customer retention.">
+  <meta name="keywords"
+    content="customer loyalty platform, loyalty rewards software, customer rewards program, retail loyalty platform, customer retention software">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="LOYALLOOP — Customer Loyalty & Rewards Platform SaaS">
+  <meta property="og:description"
+    content="Turn every purchase into loyalty. Build reward programs, digital passes, and retention campaigns.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-xl py-3" aria-label="Main navigation">
+      <div class="container-fluid px-lg-5">
+        <!-- Brand Logo -->
+        <a class="navbar-brand-custom" href="index.html" aria-label="LOYALLOOP Home">
+          <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="36" height="36" class="brand-icon">
+          <span>LOYALLOOP</span>
+        </a>
+
+        <!-- Controls for Mobile (RTL Toggle + Theme Toggle + Hamburger) -->
+        <div class="d-flex align-items-center gap-2 d-xl-none">
+          <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout"
+            title="Switch to RTL layout">RTL</button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+            <i class="bi bi-sun-fill theme-icon-dark"></i>
+          </button>
+          <button class="navbar-toggler-custom" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-custom" id="mainNavCollapse">
+          <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle active" href="#" id="homeDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item dropdown-item-custom active" href="index.html"><span class="item-icon"><i
+                        class="bi bi-grid-1x2"></i></span>
+                    <div>
+                      <div class="fw-bold">Home 1</div><small class="text-muted d-block">SaaS High-Conversion</small>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="home-2.html"><span class="item-icon"><i
+                        class="bi bi-arrow-repeat"></i></span>
+                    <div>
+                      <div class="fw-bold">Home 2</div><small class="text-muted d-block">Loyalty Loop™ Showcase</small>
+                    </div>
+                  </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="features.html">Features</a></li>
+
+            <!-- Solutions -->
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="solutions.html">Solutions</a>
+            </li>
+
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="case-studies.html">Case Studies</a></li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item dropdown-item-custom" href="loyalty-guide.html"><span class="item-icon"><i
+                        class="bi bi-book"></i></span>
+                    <div>
+                      <div class="fw-bold">Loyalty Guide</div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="faqs.html"><span class="item-icon"><i
+                        class="bi bi-question-circle"></i></span>
+                    <div>
+                      <div class="fw-bold">FAQs</div>
+                    </div>
+                  </a></li>
+                <li><a class="dropdown-item dropdown-item-custom" href="blog.html"><span class="item-icon"><i
+                        class="bi bi-newspaper"></i></span>
+                    <div>
+                      <div class="fw-bold">Blog</div>
+                    </div>
+                  </a></li>
+                <li>
+                  <hr class="dropdown-divider my-2">
+                </li>
+                <li><a class="dropdown-item dropdown-item-custom" href="resources.html"><span class="item-icon"><i
+                        class="bi bi-collection"></i></span>
+                    <div>
+                      <div class="fw-bold">Resource Center</div>
+                    </div>
+                  </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+            <button class="rtl-toggle-btn d-none d-xl-inline-flex" type="button" aria-label="Switch to RTL layout"
+              title="Switch to RTL layout">RTL</button>
+            <button class="theme-toggle-btn d-none d-xl-inline-flex" type="button" aria-label="Toggle theme">
+              <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+              <i class="bi bi-sun-fill theme-icon-dark"></i>
+            </button>
+            <a href="signup.html" class="btn btn-primary-custom btn-sm rounded-pill px-4">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section class="hero-section">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <!-- Left Column: Copy & Actions -->
+          <div class="col-lg-6 hero-content-anim">
+            <div class="mb-3">
+              <span class="badge-pill-custom badge-primary-soft">
+                <i class="bi bi-stars"></i> Next-Gen Retail &amp; DTC Loyalty SaaS
+              </span>
+            </div>
+            <h1 class="display-4 fw-extrabold mb-3">
+              Turn Every Purchase Into <span class="text-primary-custom">Loyalty.</span>
+            </h1>
+            <p class="lead mb-4">
+              Build high-engagement reward programs, issue seamless digital loyalty passes, and turn one-time shoppers
+              into lifelong brand advocates. Designed for retail, restaurants, and ecommerce.
+            </p>
+            <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+              <a href="signup.html" class="btn btn-primary-custom btn-lg">
+                Get Started Free <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="features.html" class="btn btn-outline-custom btn-lg">
+                Explore Features
+              </a>
+            </div>
+            <!-- Trust indicators -->
+            <div class="d-flex align-items-center gap-4 pt-2 text-muted">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5"></i>
+                <small class="fw-semibold text-main">No POS Hardware Needed</small>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-accent-custom fs-5"></i>
+                <small class="fw-semibold text-main">Apple &amp; Google Wallet Ready</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Loyalty Flow Visual Mockup -->
+          <div class="col-lg-6 hero-visual-anim">
+            <div class="position-relative p-2 p-md-3 bg-surface rounded-custom-xl shadow-custom-card border-custom">
+              <img src="assets/images/hero/hero-flow.svg" alt="Customer Loyalty Loop Journey Visualization"
+                class="w-100 rounded-custom-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TRUST / INDUSTRY USE CASE STRIP -->
+    <section class="py-4 border-top border-bottom border-custom bg-surface-alt">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-3 text-center text-md-start">
+            <span class="text-uppercase font-heading fw-bold fs-7 text-muted">Built for Modern Businesses:</span>
+          </div>
+          <div class="col-12 col-md-9">
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-4 text-muted font-heading fw-bold">
+              <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-shop text-primary"></i> Retail
+                Stores</span>
+              <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-cup-hot text-reward-gold"></i>
+                Restaurants &amp; Cafés</span>
+              <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-cart3 text-accent"></i> Ecommerce
+                DTC</span>
+              <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-flower1 text-info"></i> Beauty &amp;
+                Wellness</span>
+              <span class="d-inline-flex align-items-center gap-2"><i class="bi bi-lightning text-primary"></i> Fitness
+                Clubs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: LOYALTY PROGRAM BENEFITS (6 CARDS) -->
+    <section class="section-padding bg-body">
+      <div class="container">
+        <div class="row justify-content-center text-center section-header">
+          <div class="col-lg-8">
+            <span class="section-subtitle">Core Platform Capabilities</span>
+            <h2 class="h1 mb-3">Everything You Need to Build Customer Loyalty</h2>
+            <p class="lead">
+              Transform transactional relationships into emotional loyalty with intelligent rewards, automated triggers,
+              and friction-free member identification.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <h3 class="h4 mb-2">Reward Repeat Purchases</h3>
+              <p class="mb-0">
+                Incentivize customers with points-per-dollar, visit stamps, or tiered cashback redeemable instantly at
+                checkout.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h3 class="h4 mb-2">Digital Wallet Passes</h3>
+              <p class="mb-0">
+                Let customers save dynamic loyalty passes directly to Apple Wallet and Google Wallet with real-time
+                balance push updates.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="bi bi-sliders"></i>
+              </div>
+              <h3 class="h4 mb-2">Personalized Rewards</h3>
+              <p class="mb-0">
+                Deliver customized perks based on individual order history, favorite menu items, birthdays, and seasonal
+                milestones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="h4 mb-2">Encourage Referrals</h3>
+              <p class="mb-0">
+                Turn your best shoppers into brand advocates with shareable 2-way referral incentives and friend
+                invitations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="bi bi-award"></i>
+              </div>
+              <h3 class="h4 mb-2">Build Membership Tiers</h3>
+              <p class="mb-0">
+                Create aspirational Bronze, Silver, Gold, and Platinum tiers that drive higher average order value and
+                prestige.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="h4 mb-2">Strengthen Customer Retention</h3>
+              <p class="mb-0">
+                Automatically detect at-risk customers and trigger win-back perks before they lapse to competitors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: HOW LOYALTY WORKS (4 STEPS) -->
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="row justify-content-center text-center section-header">
+          <div class="col-lg-8">
+            <span class="section-subtitle">Effortless Implementation</span>
+            <h2 class="h1 mb-3">How LOYALLOOP Drives Repeat Growth</h2>
+            <p class="lead">
+              A frictionless customer experience from first scan to lifetime advocacy in four simple steps.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Step 1 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="step-card">
+              <span class="step-number">01</span>
+              <h3 class="h5 mb-2">Set Up Your Program</h3>
+              <p class="mb-0 text-muted">
+                Configure your earning rules, reward tiers, and branding in minutes without complex coding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="step-card">
+              <span class="step-number">02</span>
+              <h3 class="h5 mb-2">Customers Earn Points</h3>
+              <p class="mb-0 text-muted">
+                Shoppers tap their digital pass or enter their phone number at POS and online checkout to earn rewards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="step-card">
+              <span class="step-number">03</span>
+              <h3 class="h5 mb-2">Unlock Rewards</h3>
+              <p class="mb-0 text-muted">
+                Points unlock instant vouchers, free drinks, exclusive products, and VIP tier benefits automatically.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="step-card">
+              <span class="step-number">04</span>
+              <h3 class="h5 mb-2">Customers Come Back</h3>
+              <p class="mb-0 text-muted">
+                Automated reminders and tier progress motivate customers to return sooner and spend more per visit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: REWARD EXPERIENCE (VISUAL SHOWCASE) -->
+    <section class="section-padding bg-body">
+      <div class="container">
+        <div class="row justify-content-center text-center section-header">
+          <div class="col-lg-8">
+            <span class="section-subtitle">Delightful Customer Perks</span>
+            <h2 class="h1 mb-3">Flexible Rewards That Customers Actually Want</h2>
+            <p class="lead">
+              Craft rewarding experiences that align with your margins and keep your community engaged.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch justify-content-center">
+          <!-- Item 1 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="reward-tier-card h-100">
+              <img src="assets/images/rewards/reward-coffee.svg" alt="Free Coffee Reward" class="reward-badge-img">
+              <span class="badge-pill-custom badge-gold-soft mb-2">250 POINTS</span>
+              <h3 class="h5 mb-2">Free Artisan Beverage</h3>
+              <p class="text-muted small mb-0">Instant redemption on any handcrafted coffee or specialty tea.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="reward-tier-card h-100">
+              <img src="assets/images/rewards/reward-voucher.svg" alt="$15 Voucher Reward" class="reward-badge-img">
+              <span class="badge-pill-custom badge-accent-soft mb-2">500 POINTS</span>
+              <h3 class="h5 mb-2">$15 Off Next Order</h3>
+              <p class="text-muted small mb-0">Automatic voucher applied on in-store or online baskets over $50.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="reward-tier-card h-100">
+              <img src="assets/images/rewards/reward-vip-pass.svg" alt="VIP Pass Reward" class="reward-badge-img">
+              <span class="badge-pill-custom badge-primary-soft mb-2">1,000 POINTS</span>
+              <h3 class="h5 mb-2">VIP Gold Member Status</h3>
+              <p class="text-muted small mb-0">Unlocks free express delivery, secret menus, and 1.5x points multiplier.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="reward-tier-card h-100">
+              <img src="assets/images/rewards/reward-birthday.svg" alt="Birthday Reward" class="reward-badge-img">
+              <span class="badge-pill-custom badge-gold-soft mb-2">SPECIAL PERK</span>
+              <h3 class="h5 mb-2">Birthday Gift Box</h3>
+              <p class="text-muted small mb-0">Automated celebration gift sent directly to member pass during birthday
+                month.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <span class="badge-demo"><i class="bi bi-info-circle me-1"></i> Demo reward visual examples — completely
+            customizable inside your LOYALLOOP campaign builder.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: DIGITAL PASSES & CARDS SHOWCASE -->
+    <section class="section-padding bg-surface border-top border-custom">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-subtitle">No Plastic Cards Required</span>
+            <h2 class="h1 mb-3">Modern Digital Membership Passes</h2>
+            <p class="lead mb-4">
+              Give your customers a beautiful branded loyalty card that lives right inside their smartphone wallet. Zero
+              apps to download, zero plastic waste.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-phone-vibrate text-primary fs-4"></i>
+                <div>
+                  <strong class="d-block text-main">Apple Wallet &amp; Google Wallet Native</strong>
+                  <span class="text-muted small">1-tap add from SMS, email receipts, or POS QR codes.</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-bell text-accent fs-4"></i>
+                <div>
+                  <strong class="d-block text-main">Lock Screen Geofence Notifications</strong>
+                  <span class="text-muted small">Remind members of available perks when they walk near your
+                    store.</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center gap-3">
+                <i class="bi bi-qr-code-scan text-reward-gold fs-4"></i>
+                <div>
+                  <strong class="d-block text-main">Universal Scanner Compatibility</strong>
+                  <span class="text-muted small">Works with standard 1D/2D optical barcode scanners and NFC tap.</span>
+                </div>
+              </li>
+            </ul>
+            <a href="features.html" class="btn btn-primary-custom">
+              Explore All Features <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-2 bg-surface-alt rounded-custom-lg border-custom mb-3">
+                  <img src="assets/images/loyalty-cards/card-gold.svg" alt="Gold VIP Loyalty Card"
+                    class="w-100 rounded-custom-md">
+                </div>
+                <div class="p-2 bg-surface-alt rounded-custom-lg border-custom">
+                  <img src="assets/images/loyalty-cards/card-emerald.svg" alt="Emerald Boutique Card"
+                    class="w-100 rounded-custom-md">
+                </div>
+              </div>
+              <div class="col-md-6 mt-md-4">
+                <div class="p-2 bg-surface-alt rounded-custom-lg border-custom mb-3">
+                  <img src="assets/images/loyalty-cards/card-platinum.svg" alt="Platinum Membership Card"
+                    class="w-100 rounded-custom-md">
+                </div>
+                <div class="p-2 bg-surface-alt rounded-custom-lg border-custom">
+                  <img src="assets/images/loyalty-cards/stamp-card.svg" alt="Digital Coffee Stamp Card"
+                    class="w-100 rounded-custom-md">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: BUSINESS BENEFITS (SPLIT LAYOUT) -->
+    <section class="section-padding bg-body">
+      <div class="container">
+        <div class="row justify-content-center text-center section-header">
+          <div class="col-lg-8">
+            <span class="section-subtitle">Mutual Value Creation</span>
+            <h2 class="h1 mb-3">Why Customers &amp; Businesses Love LOYALLOOP</h2>
+            <p class="lead">
+              A balanced loyalty ecosystem where customers receive genuine delight and merchants drive sustainable
+              revenue growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- For Customers -->
+          <div class="col-lg-6">
+            <div class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom h-100 shadow-custom-sm">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="feature-icon-box mb-0 bg-primary-subtle text-primary">
+                  <i class="bi bi-person-heart"></i>
+                </div>
+                <div>
+                  <h3 class="h3 mb-0">For Your Customers</h3>
+                  <small class="text-muted">Effortless rewards and elevated experiences</small>
+                </div>
+              </div>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="bi bi-check2-circle text-accent fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Instant gratification:</strong>
+                    <span class="text-muted">Earn points seamlessly on every online and in-store interaction.</span>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="bi bi-check2-circle text-accent fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Zero friction:</strong>
+                    <span class="text-muted">No plastic cards to lose and no extra mobile app installations
+                      required.</span>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="bi bi-check2-circle text-accent fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Exclusive privileges:</strong>
+                    <span class="text-muted">Unlock personalized discounts, VIP events, and surprise milestone
+                      gifts.</span>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-3">
+                  <i class="bi bi-check2-circle text-accent fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Transparent progress:</strong>
+                    <span class="text-muted">Real-time point updates right on their mobile phone lock screen.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- For Businesses -->
+          <div class="col-lg-6">
+            <div class="p-4 p-md-5 bg-surface rounded-custom-xl border-custom h-100 shadow-custom-sm">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="feature-icon-box mb-0 bg-accent-subtle text-accent">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <div>
+                  <h3 class="h3 mb-0">For Your Business</h3>
+                  <small class="text-muted">Predictable retention and higher lifetime value</small>
+                </div>
+              </div>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="bi bi-check2-circle text-primary fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Higher repeat purchase rate:</strong>
+                    <span class="text-muted">Encourage members to return 40%+ more frequently compared to
+                      non-members.</span>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="bi bi-check2-circle text-primary fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Increased average basket size:</strong>
+                    <span class="text-muted">Gamified tier milestones incentivize customers to add more items to
+                      cart.</span>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-3 mb-3">
+                  <i class="bi bi-check2-circle text-primary fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Automated win-back marketing:</strong>
+                    <span class="text-muted">Trigger proactive perks to lapsing guests before churn occurs.</span>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-3">
+                  <i class="bi bi-check2-circle text-primary fs-5 mt-1"></i>
+                  <div>
+                    <strong class="text-main">Rich customer insights:</strong>
+                    <span class="text-muted">Understand buying patterns and segment high-value VIP segments
+                      easily.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CASE STUDY PREVIEWS (3 FICTIONAL EXAMPLES) -->
+    <section class="section-padding bg-surface">
+      <div class="container">
+        <div class="row justify-content-between align-items-end section-header">
+          <div class="col-lg-7">
+            <span class="section-subtitle">Real Results, Fictional Stories</span>
+            <h2 class="h1 mb-2">How Brands Win With LOYALLOOP</h2>
+            <p class="lead mb-0">Explore illustrative case studies across restaurant, retail, and DTC ecommerce
+              programs.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-xl-0">
+            <a href="case-studies.html" class="btn btn-outline-custom">
+              View All Case Studies <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Case 1 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="case-study-card">
+              <div class="case-study-img-wrap">
+                <img src="assets/images/case-studies/urban-table.svg" alt="Urban Table Restaurant Loyalty Case Study">
+              </div>
+              <div class="case-study-body">
+                <span class="badge-pill-custom badge-gold-soft mb-2">RESTAURANTS &amp; CAFÉS</span>
+                <h3 class="h4 mb-2"><a href="case-study-details.html" class="text-main">Urban Table Dining Pass</a></h3>
+                <p class="text-muted small mb-4">How a 6-location modern bistro boosted 30-day guest revisit rates by
+                  42% using table QR dining stamps.</p>
+                <a href="case-study-details.html" class="mt-auto fw-bold text-primary">Read Case Study <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="case-study-card">
+              <div class="case-study-img-wrap">
+                <img src="assets/images/case-studies/north-co.svg"
+                  alt="North &amp; Co. Apparel Retail Rewards Case Study">
+              </div>
+              <div class="case-study-body">
+                <span class="badge-pill-custom badge-primary-soft mb-2">OMNICHANNEL RETAIL</span>
+                <h3 class="h4 mb-2"><a href="case-study-details.html" class="text-main">North &amp; Co. Apparel</a></h3>
+                <p class="text-muted small mb-4">Unifying in-store fitting room visits and online orders into a tiered
+                  Gold &amp; Platinum VIP pass.</p>
+                <a href="case-study-details.html" class="mt-auto fw-bold text-primary">Read Case Study <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="col-md-6 col-xl-4">
+            <div class="case-study-card">
+              <div class="case-study-img-wrap">
+                <img src="assets/images/case-studies/bloom-market.svg" alt="Bloom Market DTC Ecommerce Case Study">
+              </div>
+              <div class="case-study-body">
+                <span class="badge-pill-custom badge-accent-soft mb-2">ECOMMERCE DTC</span>
+                <h3 class="h4 mb-2"><a href="case-study-details.html" class="text-main">Bloom Market Sustainable
+                    Goods</a></h3>
+                <p class="text-muted small mb-4">Driving 4.2x referral growth and 63% repeat order velocity through
+                  automated green milestone perks.</p>
+                <a href="case-study-details.html" class="mt-auto fw-bold text-primary">Read Case Study <i
+                    class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 10: FINAL CONVERSION CTA -->
+    <section class="section-padding bg-surface border-top border-custom position-relative overflow-hidden">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="badge-pill-custom badge-primary-soft mb-3">
+              <i class="bi bi-rocket-takeoff"></i> Start in Under 10 Minutes
+            </span>
+            <h2 class="display-5 fw-extrabold mb-3">Ready to Turn Customers Into Regulars?</h2>
+            <p class="lead mb-4">
+              Join forward-thinking retail, restaurant, and ecommerce merchants building thriving customer communities
+              with LOYALLOOP.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+              <a href="signup.html" class="btn btn-primary-custom btn-lg">
+                Get Started Free <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="contact.html" class="btn btn-outline-custom btn-lg">
+                Talk to Sales
+              </a>
+            </div>
+            <p class="text-muted small mt-3 mb-0">No credit card required • 14-day full feature demo trial • Instant
+              activation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Socials -->
+        <div class="col-lg-4">
+          <a class="navbar-brand-custom mb-3" href="index.html">
+            <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
+            <span>LOYALLOOP</span>
+          </a>
+          <p class="mb-3">
+            "Turn Every Purchase Into Loyalty." The modern retail-tech platform for high-engagement customer rewards,
+            digital wallet passes, and retention marketing.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="#" class="social-link-btn" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-link-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Product -->
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="features.html">Features</a></li>
+            <li><a href="feature-details.html">Feature Details</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="loyalty-guide.html">Loyalty Guide</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="resources.html">Resource Hub</a></li>
+            <li><a href="documentation/index.html">Documentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Sales</a></li>
+            <li><a href="login.html">Demo Login</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0">&copy; 2026 LOYALLOOP. All rights reserved. Built for modern retail-tech &amp; SaaS merchants.
+        </p>
+        <div class="d-flex align-items-center gap-3">
+          <a href="about.html" class="text-muted">Privacy Policy</a>
+          <span class="text-muted">&bull;</span>
+          <a href="about.html" class="text-muted">Terms of Service</a>
+          <span class="text-muted">&bull;</span>
+          <a href="about.html" class="text-muted">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Dependencies -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

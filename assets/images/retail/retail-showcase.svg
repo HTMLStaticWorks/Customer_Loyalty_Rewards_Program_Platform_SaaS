@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="retGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="retShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- POS Terminal Frame Mockup -->
+  <rect x="20" y="20" width="500" height="340" rx="20" fill="url(#retGrad)" filter="url(#retShadow)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Header Bar -->
+  <rect x="40" y="40" width="460" height="40" rx="10" fill="#1E293B" />
+  <circle cx="60" cy="60" r="6" fill="#EF4444" />
+  <circle cx="78" cy="60" r="6" fill="#F59E0B" />
+  <circle cx="96" cy="60" r="6" fill="#10B981" />
+  <text x="270" y="65" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">LOYALLOOP Retail POS Scanner &amp; Member Lookup</text>
+  
+  <!-- Left Panel: Customer Lookup & Scan -->
+  <rect x="40" y="100" width="220" height="230" rx="14" fill="#0F172A" stroke="#334155" stroke-width="1" />
+  <circle cx="150" cy="140" r="24" fill="#4F46E5" fill-opacity="0.2" />
+  <path d="M142 140C142 135.5 145.5 132 150 132C154.5 132 158 135.5 158 140" stroke="#818CF8" stroke-width="2" stroke-linecap="round" />
+  <circle cx="150" cy="126" r="4.5" stroke="#818CF8" stroke-width="2" />
+  
+  <text x="150" y="180" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Scan Digital Pass</text>
+  <text x="150" y="200" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Tap phone or scan barcode</text>
+  
+  <!-- Scanner Beam -->
+  <rect x="70" y="225" width="160" height="3" rx="1.5" fill="#10B981" />
+  <path d="M80 240H220" stroke="#34D399" stroke-width="1.5" stroke-dasharray="4 4" />
+  <text x="150" y="275" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Member Identified: #LL-8940</text>
+  <text x="150" y="295" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">Alexandra Chen (Gold Tier)</text>
+
+  <!-- Right Panel: Real-Time Reward Application -->
+  <rect x="280" y="100" width="220" height="230" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
+  <text x="300" y="130" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">CURRENT BASKET</text>
+  <text x="300" y="155" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="800">$142.00</text>
+  
+  <!-- Auto-Applied Perks -->
+  <g transform="translate(300, 175)">
+    <rect width="180" height="42" rx="8" fill="#064E3B" stroke="#059669" stroke-width="1" />
+    <text x="12" y="26" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="11" font-weight="600">✓ $15 Loyalty Perk Applied</text>
+  </g>
+  
+  <g transform="translate(300, 225)">
+    <rect width="180" height="42" rx="8" fill="#1E1B4B" stroke="#4338CA" stroke-width="1" />
+    <text x="12" y="26" fill="#C7D2FE" font-family="'Inter', sans-serif" font-size="11" font-weight="600">+127 Points Will Be Earned</text>
+  </g>
+  
+  <rect x="300" y="280" width="180" height="34" rx="8" fill="#4F46E5" />
+  <text x="390" y="302" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Confirm &amp; Issue Points</text>
+</svg>

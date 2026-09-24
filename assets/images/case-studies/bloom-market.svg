@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="60%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="20" fill="url(#bmGrad)" />
+  <circle cx="500" cy="80" r="140" fill="#34D399" opacity="0.15" />
+  
+  <g transform="translate(40, 50)">
+    <rect width="140" height="28" rx="14" fill="#ECFDF5" fill-opacity="0.2" stroke="#6EE7B7" stroke-width="1" />
+    <text x="70" y="19" fill="#D1FAE5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">ECOMMERCE DTC</text>
+    
+    <text x="0" y="80" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800">Bloom Market</text>
+    <text x="0" y="112" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="16" font-weight="500">Points &amp; Referrals for Sustainable DTC Living</text>
+    
+    <rect y="150" width="520" height="120" rx="16" fill="#062E24" fill-opacity="0.7" stroke="rgba(167, 243, 208, 0.2)" />
+    
+    <g transform="translate(30, 180)">
+      <text x="0" y="24" fill="#6EE7B7" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800">4.2x</text>
+      <text x="0" y="48" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="12">Referral Advocacy</text>
+    </g>
+    
+    <g transform="translate(190, 180)">
+      <text x="0" y="24" fill="#FDE047" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800">+63%</text>
+      <text x="0" y="48" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="12">Re-Order Frequency</text>
+    </g>
+    
+    <g transform="translate(350, 180)">
+      <text x="0" y="24" fill="#67E8F9" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800">92%</text>
+      <text x="0" y="48" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="12">Points Redemption</text>
+    </g>
+    
+    <text x="0" y="305" fill="#34D399" font-family="'Inter', sans-serif" font-size="11" font-weight="500">Demo Case Study Illustration • Fictional SaaS Reference</text>
+  </g>
+</svg>

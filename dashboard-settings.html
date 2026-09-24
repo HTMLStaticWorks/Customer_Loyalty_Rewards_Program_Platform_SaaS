@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Settings &amp; API Keys — Merchant Dashboard | LOYALLOOP</title>
+  <meta name="description" content="Configure merchant loyalty brand settings, digital wallet pass visuals, webhooks, and developer API keys.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-body">
+
+  <div class="dashboard-wrapper">
+    <!-- LEFT SIDEBAR MENU (Full Height Top to Bottom) -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+      <div>
+        <!-- Sidebar Brand Header -->
+        <div class="dashboard-sidebar-header d-flex align-items-center justify-content-between">
+          <a class="navbar-brand-custom" href="index.html">
+            <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="34" height="34" class="brand-icon">
+            <span>LOYALLOOP</span>
+          </a>
+          <button class="btn btn-sm btn-ghost-custom d-lg-none" id="closeSidebarBtn" aria-label="Close sidebar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="dashboard-nav" id="dashboardNav">
+          <a href="dashboard.html" class="dashboard-nav-item">
+            <i class="bi bi-speedometer2"></i>
+            <span>Overview &amp; Analytics</span>
+          </a>
+          <a href="dashboard-tiers.html" class="dashboard-nav-item">
+            <i class="bi bi-layers-half"></i>
+            <span>Reward Tiers &amp; Rules</span>
+          </a>
+          <a href="dashboard-engagement.html" class="dashboard-nav-item">
+            <i class="bi bi-people"></i>
+            <span>Customers</span>
+          </a>
+          <a href="dashboard-redemptions.html" class="dashboard-nav-item">
+            <i class="bi bi-gift"></i>
+            <span>Redemption Activity</span>
+          </a>
+          <a href="dashboard-billing.html" class="dashboard-nav-item">
+            <i class="bi bi-credit-card"></i>
+            <span>Subscription &amp; Billing</span>
+          </a>
+          <a href="dashboard-settings.html" class="dashboard-nav-item active">
+            <i class="bi bi-sliders"></i>
+            <span>Settings &amp; API Keys</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Sidebar Footer with Preferences, User Profile & Logout -->
+      <div class="dashboard-sidebar-footer">
+        <!-- Theme & RTL Controls -->
+        <div class="d-flex align-items-center justify-content-between p-2 mb-3 bg-surface-alt rounded-custom-md border-custom">
+          <span class="small font-heading fw-bold text-muted">Preferences</span>
+          <div class="d-flex align-items-center gap-2">
+            <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout" title="Switch to RTL layout">RTL</button>
+            <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+              <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+              <i class="bi bi-sun-fill theme-icon-dark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Store Admin Profile -->
+        <div class="d-flex align-items-center gap-3 mb-3 px-1">
+          <div class="avatar-circle bg-primary text-white font-heading fw-bold" style="width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            AC
+          </div>
+          <div class="overflow-hidden">
+            <div class="fw-bold text-main text-truncate small">Store Admin</div>
+            <div class="text-muted small text-truncate">admin@aromacafe.com</div>
+          </div>
+        </div>
+
+        <!-- Back to Website & Logout Buttons -->
+        <div class="d-flex flex-column gap-2">
+          <a href="login.html" class="btn btn-outline-danger btn-sm w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT (NO HEADER) -->
+    <main class="dashboard-main">
+          <div class="dashboard-mobile-bar d-flex d-xl-none align-items-center justify-content-between p-3 border-bottom border-custom bg-surface sticky-top">
+      <a class="navbar-brand-custom" href="index.html">
+        <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
+        <span>LOYALLOOP</span>
+      </a>
+      <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+        <i class="bi bi-list fs-4"></i>
+      </button>
+    </div>
+<div class="dashboard-content">
+        <!-- Page Title & Actions Strip -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+          <div>
+            <h1 class="h3 mb-1 fw-bold">Program Settings &amp; API Integration</h1>
+            <p class="text-muted small mb-0">Configure merchant brand identity, wallet pass styles, and secure developer API keys.</p>
+          </div>
+          <button class="btn btn-primary-custom btn-sm rounded-pill px-4" onclick="alert('Settings saved successfully!');">
+            <i class="bi bi-check2-circle me-1"></i> Save Changes
+          </button>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <!-- Store Profile & Branding -->
+          <div class="col-lg-6">
+            <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm h-100">
+              <h2 class="h5 mb-3">Merchant Profile &amp; Currency</h2>
+              <form onsubmit="event.preventDefault(); alert('Merchant profile updated!');">
+                <div class="mb-3">
+                  <label class="form-label-custom">Business / Brand Name</label>
+                  <input type="text" class="form-control form-control-custom" value="Aroma Cafe Retail Group">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label-custom">Customer Portal Subdomain</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control form-control-custom" value="aromacafe">
+                    <span class="input-group-text bg-surface-alt border-custom">.loyalloop.io</span>
+                  </div>
+                </div>
+                <div class="row g-3 mb-3">
+                  <div class="col-6">
+                    <label class="form-label-custom">Store Currency</label>
+                    <select class="form-select form-control-custom">
+                      <option selected>USD ($)</option>
+                      <option>EUR (€)</option>
+                      <option>GBP (£)</option>
+                      <option>CAD ($)</option>
+                      <option>AUD ($)</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <label class="form-label-custom">Program Display Name</label>
+                    <input type="text" class="form-control form-control-custom" value="Aroma Rewards Club">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label-custom">Support Contact Email</label>
+                  <input type="email" class="form-control form-control-custom" value="rewards@aromacafe.com">
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Digital Wallet Pass Customizer -->
+          <div class="col-lg-6">
+            <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm h-100">
+              <h2 class="h5 mb-3">Apple &amp; Google Wallet Pass Styling</h2>
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom mb-3">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <div class="badge bg-primary text-white p-3 rounded-custom-sm fs-4">
+                    <i class="bi bi-wallet2"></i>
+                  </div>
+                  <div>
+                    <h3 class="h6 mb-0">Aroma Rewards Club Pass</h3>
+                    <small class="text-muted">Live sync enabled for Apple Wallet &amp; Google Pay</small>
+                  </div>
+                </div>
+                <div class="row g-2 small mt-2">
+                  <div class="col-6"><strong>Pass Card Color:</strong> #4F46E5</div>
+                  <div class="col-6"><strong>Barcode:</strong> QR Code (Auto-refresh)</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label-custom">Primary Pass Color</label>
+                <div class="d-flex align-items-center gap-3">
+                  <input type="color" class="form-control form-control-color border-custom" value="#4F46E5" style="width: 50px; height: 38px;">
+                  <span class="small text-muted">Defines background color of member passes on iOS &amp; Android devices.</span>
+                </div>
+              </div>
+
+              <div class="form-check form-switch mb-2">
+                <input class="form-check-input" type="checkbox" id="passPush" checked>
+                <label class="form-check-label small fw-bold" for="passPush">Send Push Notifications on Point Balance Change</label>
+              </div>
+
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="passGeo" checked>
+                <label class="form-check-label small fw-bold" for="passGeo">Geofence Lock Screen Alerts Near Store Locations</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developer API Keys & Webhook Endpoints -->
+        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h5 mb-0">Developer API Keys &amp; Webhooks</h2>
+            <button class="btn btn-outline-custom btn-sm rounded-pill" onclick="alert('Regenerating API Key (demo)...');">
+              <i class="bi bi-arrow-clockwise me-1"></i> Roll Secret Key
+            </button>
+          </div>
+          <p class="text-muted small mb-4">Use these keys to authenticate POS systems (Square, Clover, Toast, Shopify POS) and custom mobile applications.</p>
+
+          <div class="mb-3">
+            <label class="form-label-custom">Publishable API Key (Client-side)</label>
+            <div class="input-group">
+              <input type="text" class="form-control form-control-custom font-mono" value="pk_live_loyalloop_9482710385920194" readonly>
+              <button class="btn btn-outline-custom" type="button" onclick="alert('Publishable key copied to clipboard!');"><i class="bi bi-clipboard"></i> Copy</button>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label-custom">Secret API Key (Server-side)</label>
+            <div class="input-group">
+              <input type="password" class="form-control form-control-custom font-mono" id="secKey" value="sk_live_loyalloop_SECRET_KEY_892018249012" readonly>
+              <button class="btn btn-outline-custom" type="button" onclick="const k=document.getElementById('secKey'); k.type = k.type==='password'?'text':'password';"><i class="bi bi-eye"></i></button>
+              <button class="btn btn-outline-custom" type="button" onclick="alert('Secret key copied to clipboard!');"><i class="bi bi-clipboard"></i> Copy</button>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label-custom">POS Webhook Event Listener URL</label>
+            <div class="input-group">
+              <input type="url" class="form-control form-control-custom font-mono" value="https://api.aromacafe.com/webhooks/loyalty-events">
+              <button class="btn btn-primary-custom" type="button" onclick="alert('Sending test webhook ping payload...');"><i class="bi bi-send me-1"></i> Test Ping</button>
+            </div>
+            <small class="text-muted">Webhook triggers on <code>purchase.created</code>, <code>points.earned</code>, and <code>reward.redeemed</code>.</small>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript Dependencies -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+      const dashboardSidebar = document.getElementById('dashboardSidebar');
+
+      if (toggleSidebarBtn && dashboardSidebar) {
+        toggleSidebarBtn.addEventListener('click', () => {
+          dashboardSidebar.classList.toggle('show');
+        });
+      }
+      if (closeSidebarBtn && dashboardSidebar) {
+        closeSidebarBtn.addEventListener('click', () => {
+          dashboardSidebar.classList.remove('show');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

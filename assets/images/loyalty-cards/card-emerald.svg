@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="emCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="60%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <filter id="emShadow" x="-20" y="-10" width="460" height="300" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#064E3B" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <g filter="url(#emShadow)">
+    <rect x="10" y="10" width="400" height="240" rx="20" fill="url(#emCardGrad)" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.5" />
+  </g>
+  <circle cx="370" cy="200" r="100" fill="#34D399" opacity="0.15" />
+  
+  <g transform="translate(36, 36)">
+    <rect width="32" height="32" rx="8" fill="#A7F3D0" />
+    <path d="M16 10C12.6863 10 10 12.6863 10 16C10 21 16 25 16 25C16 25 22 21 22 16C22 12.6863 19.3137 10 16 10Z" fill="#064E3B" />
+    <text x="44" y="16" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800">LOYALLOOP</text>
+    <text x="44" y="30" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="10" font-weight="500">BOUTIQUE ECO REWARDS</text>
+    
+    <rect x="280" y="4" width="54" height="24" rx="6" fill="#A7F3D0" fill-opacity="0.2" stroke="#A7F3D0" stroke-width="1" />
+    <text x="307" y="20" fill="#ECFDF5" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">EMERALD</text>
+  </g>
+  
+  <g transform="translate(36, 105)">
+    <text x="0" y="12" fill="#D1FAE5" font-family="'Inter', sans-serif" font-size="11" font-weight="500">SAVINGS EARNED</text>
+    <text x="0" y="42" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800">$185.50 <tspan fill="#A7F3D0" font-size="16" font-weight="600">REDEEMABLE</tspan></text>
+    <text x="0" y="66" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="12" font-weight="500">8% Cashback active on all retail orders</text>
+  </g>
+  
+  <g transform="translate(36, 195)">
+    <text x="0" y="10" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="9" font-weight="600">CARDHOLDER</text>
+    <text x="0" y="26" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700">CHLOE DUBOIS</text>
+    
+    <rect x="296" y="-12" width="38" height="38" rx="8" fill="#FFFFFF" />
+    <path d="M302 -6h10v10h-10zm2 2v6h6V-4zm14-2h10v10h-10zm2 2v6h6V-4zm-16 14h10v10h-10zm2 2v6h6V8zm14 0h4v4h-4zm6 0h4v10h-4zm-6 6h4v4h-4z" fill="#064E3B" />
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="kbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="60%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="20" fill="url(#kbGrad)" />
+  <circle cx="510" cy="90" r="130" fill="#34D399" opacity="0.15" />
+  
+  <!-- Content overlay -->
+  <g transform="translate(40, 50)">
+    <rect width="145" height="28" rx="14" fill="#D1FAE5" fill-opacity="0.2" stroke="#A7F3D0" stroke-width="1" />
+    <text x="72.5" y="19" fill="#ECFDF5" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">CAFÉ &amp; ARTISAN BAKERY</text>
+    
+    <text x="0" y="80" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800">Komorebi Artisan Café</text>
+    <text x="0" y="112" fill="#A7F3D0" font-family="'Inter', sans-serif" font-size="16" font-weight="500">Morning Coffee Streak Passes &amp; Digital Stamp Cards</text>
+    
+    <rect y="150" width="520" height="120" rx="16" fill="#064E3B" fill-opacity="0.6" stroke="rgba(167, 243, 208, 0.25)" />
+    
+    <g transform="translate(30, 180)">
+      <text x="0" y="24" fill="#ECFDF5" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800">+68%</text>
+      <text x="0" y="48" fill="#D1FAE5" font-family="'Inter', sans-serif" font-size="12">Morning Retention</text>
+    </g>
+    
+    <g transform="translate(190, 180)">
+      <text x="0" y="24" fill="#ECFDF5" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800">3.4x</text>
+      <text x="0" y="48" fill="#D1FAE5" font-family="'Inter', sans-serif" font-size="12">Pass Saves to Apple Wallet</text>
+    </g>
+    
+    <g transform="translate(350, 180)">
+      <text x="0" y="24" fill="#ECFDF5" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800">82K+</text>
+      <text x="0" y="48" fill="#D1FAE5" font-family="'Inter', sans-serif" font-size="12">Free Croissant Perks Given</text>
+    </g>
+    
+    <text x="0" y="305" fill="#34D399" font-family="'Inter', sans-serif" font-size="11" font-weight="500">Demo Case Study Illustration • Fictional SaaS Reference</text>
+  </g>
+</svg>
