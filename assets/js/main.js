@@ -137,7 +137,7 @@
       const navLinks = navCollapse.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item');
       navLinks.forEach(link => {
         link.addEventListener('click', () => {
-          if (window.innerWidth < 992 && navCollapse.classList.contains('show')) {
+          if (window.innerWidth < 1200 && navCollapse.classList.contains('show')) {
             const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
             if (bsCollapse) bsCollapse.hide();
           }

@@ -103,9 +103,16 @@
         <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
         <span>LOYALLOOP</span>
       </a>
-      <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
-        <i class="bi bi-list fs-4"></i>
-      </button>
+      <div class="d-flex align-items-center gap-2">
+        <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout" title="Switch to RTL layout">RTL</button>
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+          <i class="bi bi-sun-fill theme-icon-dark"></i>
+        </button>
+        <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
     </div>
 <div class="dashboard-content">
         <!-- Page Title & Actions Strip -->
@@ -203,38 +210,40 @@
 
         <!-- Developer API Keys & Webhook Endpoints -->
         <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
-          <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 mb-3">
             <h2 class="h5 mb-0">Developer API Keys &amp; Webhooks</h2>
-            <button class="btn btn-outline-custom btn-sm rounded-pill" onclick="alert('Regenerating API Key (demo)...');">
-              <i class="bi bi-arrow-clockwise me-1"></i> Roll Secret Key
-            </button>
+            <div>
+              <button class="btn btn-outline-custom btn-sm rounded-pill w-100 w-sm-auto" onclick="alert('Regenerating API Key (demo)...');">
+                <i class="bi bi-arrow-clockwise me-1"></i> Roll Secret Key
+              </button>
+            </div>
           </div>
           <p class="text-muted small mb-4">Use these keys to authenticate POS systems (Square, Clover, Toast, Shopify POS) and custom mobile applications.</p>
 
           <div class="mb-3">
             <label class="form-label-custom">Publishable API Key (Client-side)</label>
             <div class="input-group">
-              <input type="text" class="form-control form-control-custom font-mono" value="pk_live_loyalloop_9482710385920194" readonly>
-              <button class="btn btn-outline-custom" type="button" onclick="alert('Publishable key copied to clipboard!');"><i class="bi bi-clipboard"></i> Copy</button>
+              <input type="text" class="form-control form-control-custom font-mono text-truncate" value="pk_live_loyalloop_9482710385920194" readonly>
+              <button class="btn btn-outline-custom flex-shrink-0" type="button" onclick="alert('Publishable key copied to clipboard!');"><i class="bi bi-clipboard"></i> <span class="d-none d-sm-inline">Copy</span></button>
             </div>
           </div>
 
           <div class="mb-3">
             <label class="form-label-custom">Secret API Key (Server-side)</label>
             <div class="input-group">
-              <input type="password" class="form-control form-control-custom font-mono" id="secKey" value="sk_live_loyalloop_SECRET_KEY_892018249012" readonly>
-              <button class="btn btn-outline-custom" type="button" onclick="const k=document.getElementById('secKey'); k.type = k.type==='password'?'text':'password';"><i class="bi bi-eye"></i></button>
-              <button class="btn btn-outline-custom" type="button" onclick="alert('Secret key copied to clipboard!');"><i class="bi bi-clipboard"></i> Copy</button>
+              <input type="password" class="form-control form-control-custom font-mono text-truncate" id="secKey" value="sk_live_loyalloop_SECRET_KEY_892018249012" readonly>
+              <button class="btn btn-outline-custom flex-shrink-0" type="button" onclick="const k=document.getElementById('secKey'); k.type = k.type==='password'?'text':'password';"><i class="bi bi-eye"></i></button>
+              <button class="btn btn-outline-custom flex-shrink-0" type="button" onclick="alert('Secret key copied to clipboard!');"><i class="bi bi-clipboard"></i> <span class="d-none d-sm-inline">Copy</span></button>
             </div>
           </div>
 
           <div class="mb-3">
             <label class="form-label-custom">POS Webhook Event Listener URL</label>
             <div class="input-group">
-              <input type="url" class="form-control form-control-custom font-mono" value="https://api.aromacafe.com/webhooks/loyalty-events">
-              <button class="btn btn-primary-custom" type="button" onclick="alert('Sending test webhook ping payload...');"><i class="bi bi-send me-1"></i> Test Ping</button>
+              <input type="url" class="form-control form-control-custom font-mono text-truncate" value="https://api.aromacafe.com/webhooks/loyalty-events">
+              <button class="btn btn-primary-custom flex-shrink-0" type="button" onclick="alert('Sending test webhook ping payload...');"><i class="bi bi-send me-1"></i> <span class="d-none d-sm-inline">Test Ping</span><span class="d-inline d-sm-none">Test</span></button>
             </div>
-            <small class="text-muted">Webhook triggers on <code>purchase.created</code>, <code>points.earned</code>, and <code>reward.redeemed</code>.</small>
+            <small class="text-muted d-block mt-1">Webhook triggers on <code>purchase.created</code>, <code>points.earned</code>, and <code>reward.redeemed</code>.</small>
           </div>
         </div>
       </div>

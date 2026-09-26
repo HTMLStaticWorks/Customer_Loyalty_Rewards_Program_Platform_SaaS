@@ -5,8 +5,8 @@
       <stop offset="60%" stop-color="#047857" />
       <stop offset="100%" stop-color="#10B981" />
     </linearGradient>
-    <filter id="emShadow" x="-20" y="-10" width="460" height="300" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#064E3B" flood-opacity="0.3" />
+    <filter id="emShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#064E3B" flood-opacity="0.3" />
     </filter>
   </defs>
   <g filter="url(#emShadow)">

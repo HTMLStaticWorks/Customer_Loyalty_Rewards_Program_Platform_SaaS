@@ -111,9 +111,16 @@
           <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
           <span>LOYALLOOP</span>
         </a>
-        <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
-          <i class="bi bi-list fs-4"></i>
-        </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout" title="Switch to RTL layout">RTL</button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+            <i class="bi bi-sun-fill theme-icon-dark"></i>
+          </button>
+          <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
       </div>
       <div class="dashboard-content">
         <!-- Page Title & Actions Strip -->
@@ -173,20 +180,20 @@
         <!-- Automated Re-engagement Triggers -->
         <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm mb-4">
           <h2 class="h5 mb-3">Active Retention Automations</h2>
-          <div class="row g-3">
-            <div class="col-md-4">
-              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
+          <div class="row g-3 justify-content-center">
+            <div class="col-md-6 col-xl-4 d-flex">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom w-100 d-flex flex-column h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <span class="fw-bold"><i class="bi bi-cake2 text-accent-custom me-1"></i> Birthday Auto-Gift</span>
                   <span class="badge bg-success-subtle text-success">Active</span>
                 </div>
-                <p class="small text-muted mb-2">Pushes a free beverage pass to Apple/Google Wallet 7 days.</p>
-                <small class="text-primary font-heading fw-semibold">91% Claim Rate &bull; 842 Sent</small>
+                <p class="small text-muted mb-2">Automated birthday gift that pushes a free beverage pass to Apple &amp; Google Wallet 7 days prior.</p>
+                <small class="text-primary font-heading fw-semibold mt-auto pt-2">91% Claim Rate &bull; 842 Sent</small>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
+            <div class="col-md-6 col-xl-4 d-flex">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom w-100 d-flex flex-column h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <span class="fw-bold"><i class="bi bi-hourglass-split text-warning me-1"></i> 30-Day Inactivity
                     Nudge</span>
@@ -194,19 +201,19 @@
                 </div>
                 <p class="small text-muted mb-2">Sends a "We miss you" push note with 100 bonus points if no visit in 30
                   days.</p>
-                <small class="text-primary font-heading fw-semibold">42% Returned &bull; 1,290 Sent</small>
+                <small class="text-primary font-heading fw-semibold mt-auto pt-2">42% Returned &bull; 1,290 Sent</small>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
+            <div class="col-md-6 col-xl-4 d-flex">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom w-100 d-flex flex-column h-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <span class="fw-bold"><i class="bi bi-trophy text-primary me-1"></i> Tier Level-Up Reward</span>
                   <span class="badge bg-success-subtle text-success">Active</span>
                 </div>
                 <p class="small text-muted mb-2">Congratulates customer with instant VIP reward voucher upon tier
                   advancement.</p>
-                <small class="text-primary font-heading fw-semibold">98% Satisfaction &bull; 310 Sent</small>
+                <small class="text-primary font-heading fw-semibold mt-auto pt-2">98% Satisfaction &bull; 310 Sent</small>
               </div>
             </div>
           </div>
@@ -216,10 +223,10 @@
         <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
             <h2 class="h5 mb-0">Loyalty Member Directory (24,850 Enrolled)</h2>
-            <div class="d-flex gap-2">
-              <input type="text" class="form-control form-control-custom form-control-sm"
-                placeholder="Search by name, email, or pass ID..." style="width: 260px;">
-              <select class="form-select form-select-sm form-control-custom" style="width: auto;">
+            <div class="d-flex flex-column flex-sm-row gap-2 w-100 w-md-auto">
+              <input type="text" class="form-control form-control-custom form-control-sm flex-grow-1"
+                placeholder="Search by name, email, or pass ID...">
+              <select class="form-select form-select-sm form-control-custom" style="min-width: 130px; width: auto;">
                 <option selected>All Tiers</option>
                 <option>Platinum Elite</option>
                 <option>Gold VIP</option>

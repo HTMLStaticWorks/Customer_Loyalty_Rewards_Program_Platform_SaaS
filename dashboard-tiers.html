@@ -111,9 +111,16 @@
           <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
           <span>LOYALLOOP</span>
         </a>
-        <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
-          <i class="bi bi-list fs-4"></i>
-        </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout" title="Switch to RTL layout">RTL</button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+            <i class="bi bi-sun-fill theme-icon-dark"></i>
+          </button>
+          <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
       </div>
       <div class="dashboard-content">
         <!-- Page Title & Actions Strip -->
@@ -130,9 +137,9 @@
         </div>
 
         <!-- Point Multiplier Rules Grid -->
-        <div class="row g-3 mb-4">
-          <div class="col-md-4">
-            <div class="rule-card">
+        <div class="row g-3 mb-4 justify-content-center">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="rule-card w-100 d-flex flex-column">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="badge bg-primary p-2 rounded-custom-sm fs-5"><i class="bi bi-cash-coin"></i></div>
                 <div>
@@ -142,15 +149,15 @@
               </div>
               <p class="small text-muted mb-3">Customers automatically earn 10 points for every dollar spent in-store or
                 online.</p>
-              <div class="form-check form-switch">
+              <div class="form-check form-switch mt-auto pt-2">
                 <input class="form-check-input" type="checkbox" id="ruleBase" checked>
                 <label class="form-check-label small fw-bold" for="ruleBase">Rule Active</label>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="rule-card">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="rule-card w-100 d-flex flex-column">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="badge bg-accent-subtle text-accent-custom p-2 rounded-custom-sm fs-5"><i
                     class="bi bi-cake2"></i></div>
@@ -161,15 +168,15 @@
               </div>
               <p class="small text-muted mb-3">Members get 20 points per $1 during their entire birthday month
                 automatically.</p>
-              <div class="form-check form-switch">
+              <div class="form-check form-switch mt-auto pt-2">
                 <input class="form-check-input" type="checkbox" id="ruleBday" checked>
                 <label class="form-check-label small fw-bold" for="ruleBday">Rule Active</label>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="rule-card">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="rule-card w-100 d-flex flex-column">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="badge bg-gold-subtle text-gold-custom p-2 rounded-custom-sm fs-5"><i
                     class="bi bi-lightning-charge"></i></div>
@@ -180,15 +187,15 @@
               </div>
               <p class="small text-muted mb-3">Instant 1.5x bonus points on Friday evening orders to drive off-peak
                 visits.</p>
-              <div class="form-check form-switch">
+              <div class="form-check form-switch mt-auto pt-2">
                 <input class="form-check-input" type="checkbox" id="ruleHH" checked>
                 <label class="form-check-label small fw-bold" for="ruleHH">Rule Active</label>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="rule-card">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="rule-card w-100 d-flex flex-column">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="badge bg-info-subtle text-info p-2 rounded-custom-sm fs-5"><i class="bi bi-person-plus"></i>
                 </div>
@@ -199,15 +206,15 @@
               </div>
               <p class="small text-muted mb-3">Rewarded when an invited friend makes their first qualifying store
                 purchase.</p>
-              <div class="form-check form-switch">
+              <div class="form-check form-switch mt-auto pt-2">
                 <input class="form-check-input" type="checkbox" id="ruleRef" checked>
                 <label class="form-check-label small fw-bold" for="ruleRef">Rule Active</label>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="rule-card">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="rule-card w-100 d-flex flex-column">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="badge bg-warning-subtle text-warning p-2 rounded-custom-sm fs-5"><i
                     class="bi bi-wallet2"></i></div>
@@ -218,15 +225,15 @@
               </div>
               <p class="small text-muted mb-3">Instant reward when customer adds loyalty card to Apple or Google Wallet.
               </p>
-              <div class="form-check form-switch">
+              <div class="form-check form-switch mt-auto pt-2">
                 <input class="form-check-input" type="checkbox" id="ruleWallet" checked>
                 <label class="form-check-label small fw-bold" for="ruleWallet">Rule Active</label>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="rule-card">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="rule-card w-100 d-flex flex-column">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="badge bg-danger-subtle text-danger p-2 rounded-custom-sm fs-5"><i
                     class="bi bi-arrow-repeat"></i></div>
@@ -237,7 +244,7 @@
               </div>
               <p class="small text-muted mb-3">Automated email trigger offering 3x points on return visits for lapsed
                 guests.</p>
-              <div class="form-check form-switch">
+              <div class="form-check form-switch mt-auto pt-2">
                 <input class="form-check-input" type="checkbox" id="ruleWinback" checked>
                 <label class="form-check-label small fw-bold" for="ruleWinback">Rule Active</label>
               </div>
@@ -341,22 +348,22 @@
         <!-- Redemption Thresholds Card -->
         <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
           <h2 class="h5 mb-3">Redemption Conversion &amp; Expiration Policies</h2>
-          <div class="row g-3">
-            <div class="col-md-4">
+          <div class="row g-3 justify-content-center">
+            <div class="col-md-6 col-xl-4">
               <label class="form-label-custom">Points to Currency Ratio</label>
               <div class="input-group">
                 <span class="input-group-text bg-surface-alt border-custom">100 Pts =</span>
                 <input type="text" class="form-control form-control-custom" value="$1.00 USD">
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-xl-4">
               <label class="form-label-custom">Minimum Redemption Threshold</label>
               <div class="input-group">
                 <input type="text" class="form-control form-control-custom" value="500">
                 <span class="input-group-text bg-surface-alt border-custom">Points ($5.00)</span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-xl-4">
               <label class="form-label-custom">Point Expiration Policy</label>
               <select class="form-select form-control-custom">
                 <option selected>12 Months from Earning Date</option>

@@ -113,9 +113,16 @@
           <img src="assets/icons/logo.svg" alt="LOYALLOOP Logo" width="32" height="32" class="brand-icon">
           <span>LOYALLOOP</span>
         </a>
-        <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
-          <i class="bi bi-list fs-4"></i>
-        </button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="rtl-toggle-btn" type="button" aria-label="Switch to RTL layout" title="Switch to RTL layout">RTL</button>
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill theme-icon-light"></i>
+            <i class="bi bi-sun-fill theme-icon-dark"></i>
+          </button>
+          <button class="navbar-toggler-custom" type="button" id="toggleSidebarBtn" aria-label="Toggle navigation menu">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
       </div>
       <div class="dashboard-content">
         <!-- Page Title & Actions Strip -->

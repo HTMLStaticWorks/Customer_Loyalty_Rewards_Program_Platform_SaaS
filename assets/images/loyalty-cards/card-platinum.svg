@@ -10,8 +10,8 @@
       <stop offset="50%" stop-color="#94A3B8" />
       <stop offset="100%" stop-color="#F8FAFC" />
     </linearGradient>
-    <filter id="platShadow" x="-20" y="-10" width="460" height="300" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.4" />
+    <filter id="platShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.4" />
     </filter>
   </defs>
   <g filter="url(#platShadow)">
@@ -32,11 +32,11 @@
   <g transform="translate(36, 105)">
     <text x="0" y="12" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" font-weight="500">TIER PRIVILEGES</text>
     <text x="0" y="42" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="32" font-weight="800">5,420 <tspan fill="#38BDF8" font-size="18" font-weight="700">PTS</tspan></text>
-    <text x="180" y="38" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Free Priority Shipping & Concierge</text>
+    <text x="180" y="38" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="12" font-weight="600">Free Priority Shipping &amp; Concierge</text>
   </g>
   
   <g transform="translate(36, 185)">
-    <text x="0" y="12" fill="#64748B" font-family="'Inter', sans-serif" font-size="9" font-weight="600">CARDHOLDER</text>
+    <text x="0" y="12" fill="#64748B" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-transform="uppercase" letter-spacing="1">CARDHOLDER</text>
     <text x="0" y="30" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">MARCUS VANCE</text>
     
     <text x="180" y="12" fill="#64748B" font-family="'Inter', sans-serif" font-size="9" font-weight="600">VALID THRU</text>

@@ -5,8 +5,8 @@
       <stop offset="50%" stop-color="#78350F" />
       <stop offset="100%" stop-color="#B45309" />
     </linearGradient>
-    <filter id="stampShadow" x="-20" y="-10" width="460" height="300" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#78350F" flood-opacity="0.3" />
+    <filter id="stampShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#78350F" flood-opacity="0.3" />
     </filter>
   </defs>
   <g filter="url(#stampShadow)">
