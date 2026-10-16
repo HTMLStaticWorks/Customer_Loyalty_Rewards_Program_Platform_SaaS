@@ -213,7 +213,7 @@
           <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 mb-3">
             <h2 class="h5 mb-0">Developer API Keys &amp; Webhooks</h2>
             <div>
-              <button class="btn btn-outline-custom btn-sm rounded-pill w-100 w-sm-auto" onclick="alert('Regenerating API Key (demo)...');">
+              <button class="btn btn-outline-custom btn-sm rounded-pill w-100 w-sm-auto text-nowrap" onclick="alert('Regenerating API Key (demo)...');">
                 <i class="bi bi-arrow-clockwise me-1"></i> Roll Secret Key
               </button>
             </div>
@@ -224,7 +224,7 @@
             <label class="form-label-custom">Publishable API Key (Client-side)</label>
             <div class="input-group">
               <input type="text" class="form-control form-control-custom font-mono text-truncate" value="pk_live_loyalloop_9482710385920194" readonly>
-              <button class="btn btn-outline-custom flex-shrink-0" type="button" onclick="alert('Publishable key copied to clipboard!');"><i class="bi bi-clipboard"></i> <span class="d-none d-sm-inline">Copy</span></button>
+              <button class="btn btn-outline-custom flex-shrink-0 text-nowrap" type="button" onclick="alert('Publishable key copied to clipboard!');"><i class="bi bi-clipboard"></i> <span class="d-none d-sm-inline">Copy</span></button>
             </div>
           </div>
 
@@ -232,8 +232,8 @@
             <label class="form-label-custom">Secret API Key (Server-side)</label>
             <div class="input-group">
               <input type="password" class="form-control form-control-custom font-mono text-truncate" id="secKey" value="sk_live_loyalloop_SECRET_KEY_892018249012" readonly>
-              <button class="btn btn-outline-custom flex-shrink-0" type="button" onclick="const k=document.getElementById('secKey'); k.type = k.type==='password'?'text':'password';"><i class="bi bi-eye"></i></button>
-              <button class="btn btn-outline-custom flex-shrink-0" type="button" onclick="alert('Secret key copied to clipboard!');"><i class="bi bi-clipboard"></i> <span class="d-none d-sm-inline">Copy</span></button>
+              <button class="btn btn-outline-custom flex-shrink-0 text-nowrap" type="button" onclick="const k=document.getElementById('secKey'); k.type = k.type==='password'?'text':'password';"><i class="bi bi-eye"></i></button>
+              <button class="btn btn-outline-custom flex-shrink-0 text-nowrap" type="button" onclick="alert('Secret key copied to clipboard!');"><i class="bi bi-clipboard"></i> <span class="d-none d-sm-inline">Copy</span></button>
             </div>
           </div>
 
@@ -241,7 +241,7 @@
             <label class="form-label-custom">POS Webhook Event Listener URL</label>
             <div class="input-group">
               <input type="url" class="form-control form-control-custom font-mono text-truncate" value="https://api.aromacafe.com/webhooks/loyalty-events">
-              <button class="btn btn-primary-custom flex-shrink-0" type="button" onclick="alert('Sending test webhook ping payload...');"><i class="bi bi-send me-1"></i> <span class="d-none d-sm-inline">Test Ping</span><span class="d-inline d-sm-none">Test</span></button>
+              <button class="btn btn-primary-custom flex-shrink-0 text-nowrap" type="button" onclick="alert('Sending test webhook ping payload...');"><i class="bi bi-send me-1"></i> <span class="d-none d-sm-inline">Test Ping</span><span class="d-inline d-sm-none">Test</span></button>
             </div>
             <small class="text-muted d-block mt-1">Webhook triggers on <code>purchase.created</code>, <code>points.earned</code>, and <code>reward.redeemed</code>.</small>
           </div>

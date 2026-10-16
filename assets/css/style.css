@@ -629,6 +629,7 @@ img, svg {
   cursor: pointer;
   border: 1px solid transparent;
   line-height: 1.4;
+  white-space: nowrap;
 }
 
 .btn-primary-custom {
@@ -2603,17 +2604,42 @@ select option,
   }
 
   .table-responsive .table {
-    min-width: 540px;
+    min-width: 780px !important;
     margin-bottom: 0;
   }
 
-  /* Prevent any out-of-container blowout */
+  .table-responsive .table th,
+  .table-responsive .table td {
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+  }
+
+  .table-responsive .table td .btn,
+  .table-responsive .table th .btn {
+    white-space: nowrap !important;
+    word-break: normal !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: max-content !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Prevent any out-of-container blowout while protecting buttons & tables */
   .dashboard-main,
   .dashboard-content,
   .metric-card {
     max-width: 100% !important;
     box-sizing: border-box !important;
-    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .table-responsive,
+  .table-responsive *,
+  .btn,
+  .badge,
+  .input-group {
+    word-break: normal !important;
   }
 }
 
