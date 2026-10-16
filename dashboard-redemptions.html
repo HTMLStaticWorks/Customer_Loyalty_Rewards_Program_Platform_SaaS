@@ -129,14 +129,14 @@
         </div>
 
         <!-- POS Code Verification Box -->
-        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm mb-4">
+        <div class="p-3 p-sm-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm mb-4">
           <div class="row align-items-center g-3">
             <div class="col-lg-6">
               <h2 class="h5 mb-1"><i class="bi bi-qr-code-scan text-primary me-2"></i> Instant POS Voucher Verification</h2>
               <p class="text-muted small mb-0">Scan customer QR pass or enter 6-digit claim code to instantly validate and deduct points.</p>
             </div>
             <div class="col-lg-6">
-              <div class="input-group">
+              <div class="input-group pos-verify-input-group">
                 <input type="text" class="form-control form-control-custom" id="posClaimCode" placeholder="Enter claim code (e.g. LL-98421)" value="LL-98421">
                 <button class="btn btn-primary-custom px-4" type="button" onclick="alert('Voucher Verified! Customer: Sarah Jenkins (1,500 Pts Deducted).');">
                   <i class="bi bi-check2-circle me-1"></i> Verify &amp; Redeem
@@ -182,12 +182,12 @@
         </div>
 
         <!-- Redemption Queue Table -->
-        <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+        <div class="p-3 p-sm-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-3">
             <h2 class="h5 mb-0">Live Redemption Queue</h2>
-            <div class="d-flex gap-2">
-              <input type="text" class="form-control form-control-custom form-control-sm" placeholder="Search claims..." style="width: 200px;">
-              <select class="form-select form-select-sm form-control-custom" style="width: auto;">
+            <div class="d-flex flex-wrap gap-2 redemption-filter-wrap">
+              <input type="text" class="form-control form-control-custom form-control-sm" placeholder="Search claims..." style="min-width: 140px; flex: 1 1 auto;">
+              <select class="form-select form-select-sm form-control-custom" style="min-width: 120px; flex: 1 1 auto;">
                 <option selected>All Statuses</option>
                 <option>Pending</option>
                 <option>Fulfilled</option>

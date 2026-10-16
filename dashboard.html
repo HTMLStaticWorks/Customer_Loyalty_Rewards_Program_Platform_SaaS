@@ -132,13 +132,13 @@
             <p class="text-muted small mb-0">High-level customer retention performance, points velocity, and ROI lift.
             </p>
           </div>
-          <div class="d-flex gap-2">
-            <select class="form-select form-select-sm form-control-custom" style="width: auto;">
+          <div class="d-flex flex-wrap gap-2">
+            <select class="form-select form-select-sm form-control-custom" style="min-width: 130px; flex: 1 1 auto;">
               <option selected>Last 30 Days</option>
               <option>Quarter to Date</option>
               <option>Year 2026</option>
             </select>
-            <button class="btn btn-primary-custom btn-sm rounded-pill px-3"
+            <button class="btn btn-primary-custom btn-sm rounded-pill px-3" style="flex: 1 1 auto;"
               onclick="alert('Exporting PDF Analytics Report...');">
               <i class="bi bi-download me-1"></i> Export Report
             </button>
@@ -211,8 +211,8 @@
         <!-- Engagement Visual & Member Growth Breakdown -->
         <div class="row g-4 mb-4">
           <div class="col-lg-8">
-            <div class="p-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="p-3 p-sm-4 bg-surface rounded-custom-xl border-custom shadow-custom-sm">
+              <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
                 <h2 class="h5 mb-0">Customer Repeat Purchase Velocity &amp; Points Issuance</h2>
                 <span class="badge bg-primary-subtle text-primary">Monthly Trend</span>
               </div>
@@ -220,8 +220,8 @@
                 the current quarter.</p>
 
               <!-- SVG Vector Chart Mockup -->
-              <div class="p-3 bg-surface-alt rounded-custom-md border-custom">
-                <svg viewBox="0 0 700 220" width="100%" height="220" class="overflow-visible">
+              <div class="p-3 bg-surface-alt rounded-custom-md border-custom" style="overflow-x: auto; max-width: 100%;">
+                <svg viewBox="0 0 700 220" width="100%" height="auto" style="min-width: 480px; display: block;">
                   <defs>
                     <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
                       <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.35" />
@@ -255,10 +255,10 @@
                   <text x="550" y="205" fill="var(--text-muted)" font-size="11">Week 4</text>
                 </svg>
               </div>
-              <div class="d-flex justify-content-center gap-4 mt-3 small">
-                <span class="d-flex align-items-center gap-1"><i class="bi bi-circle-fill text-primary"
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-3 small">
+                <span class="d-inline-flex align-items-center gap-1"><i class="bi bi-circle-fill text-primary"
                     style="font-size: 8px;"></i> Points Issued</span>
-                <span class="d-flex align-items-center gap-1"><i class="bi bi-circle-fill text-accent-custom"
+                <span class="d-inline-flex align-items-center gap-1"><i class="bi bi-circle-fill text-accent-custom"
                     style="font-size: 8px;"></i> Rewards Claimed</span>
               </div>
             </div>

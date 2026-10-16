@@ -110,57 +110,205 @@
   </header>
 
   <main>
-    <!-- HOME 2: SPLIT-SCREEN EDITORIAL HERO -->
-    <section class="hero-section py-5 py-lg-6">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="badge-pill-custom badge-accent-soft mb-3">
-              <i class="bi bi-arrow-repeat"></i> The Loyalty Loop™ Framework
+    <!-- HOME 2: DISTINCTIVE CENTERED HERO & INTERACTIVE LOYALTY LOOP DECK -->
+    <section class="hero-section">
+      <div class="hero-glow-bg"></div>
+      <div class="container position-relative">
+        <!-- Centered Architectural Hero Header -->
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-10 col-xl-9">
+            <span class="badge-pill-custom badge-primary-soft mb-3">
+              <i class="bi bi-arrow-repeat me-1"></i> The Loyalty Loop™ 360° Architecture
             </span>
             <h1 class="display-3 fw-extrabold mb-3">
-              Customer Retention Starts With <span class="text-accent-custom">Better Rewards.</span>
+              Customer Retention Starts With <span class="text-primary-custom">Smarter Loops.</span>
             </h1>
-            <p class="lead mb-4">
-              Break the expensive cycle of one-time customer acquisition. LOYALLOOP orchestrates perpetual engagement loops that turn everyday shoppers into dedicated regulars.
+            <p class="lead mb-4 mx-auto" style="max-width: 760px;">
+              Break the expensive cycle of one-time customer acquisition. LOYALLOOP orchestrates perpetual engagement loops that turn everyday shoppers into dedicated brand regulars with frictionless mobile wallet passes.
             </p>
-            <div class="d-flex flex-wrap align-items-center gap-3 mb-4 hero-btn-group">
-              <a href="signup.html" class="btn btn-accent-custom btn-lg">
-                Design Your Loop <i class="bi bi-arrow-right"></i>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-4 hero-btn-group">
+              <a href="signup.html" class="btn btn-primary-custom btn-lg">
+                <i class="bi bi-lightning-charge me-1"></i> Launch Your Loop
               </a>
-              <a href="case-studies.html" class="btn btn-outline-custom btn-lg">
-                View Brand Stories
+              <a href="#loopStageDeck" class="btn btn-outline-custom btn-lg">
+                <i class="bi bi-play-circle me-1"></i> Explore Interactive Journey
               </a>
             </div>
-            <!-- Quick Editorial Metric Strip -->
-            <div class="p-3 bg-surface rounded-custom-md border-custom d-flex justify-content-around text-center">
+            <!-- Primary Metrics Row -->
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 gap-md-5 text-center pt-2">
               <div>
-                <span class="font-mono fs-4 fw-bold text-main d-block">4.1x</span>
-                <small class="text-muted">Higher Repeat Frequency</small>
+                <span class="font-mono fs-3 fw-bold text-primary-custom d-block">4.1x</span>
+                <small class="text-muted fw-semibold">Higher Repeat Frequency</small>
               </div>
-              <div class="border-start border-custom"></div>
+              <div class="vr d-none d-md-block opacity-25" style="height: 36px;"></div>
               <div>
-                <span class="font-mono fs-4 fw-bold text-accent-custom d-block">89%</span>
-                <small class="text-muted">Wallet Pass Add Rate</small>
+                <span class="font-mono fs-3 fw-bold text-primary-custom d-block">89%</span>
+                <small class="text-muted fw-semibold">Wallet Pass Add Rate</small>
               </div>
-              <div class="border-start border-custom"></div>
+              <div class="vr d-none d-md-block opacity-25" style="height: 36px;"></div>
               <div>
-                <span class="font-mono fs-4 fw-bold text-primary-custom d-block">-38%</span>
-                <small class="text-muted">Customer Churn Rate</small>
+                <span class="font-mono fs-3 fw-bold text-primary-custom d-block">-38%</span>
+                <small class="text-muted fw-semibold">Customer Churn Rate</small>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-            <div class="p-2 p-md-3 bg-surface rounded-custom-xl shadow-custom-card border-custom">
-              <img src="assets/images/hero/hero-loyalty-loop.svg" alt="The Loyalty Loop Framework Diagram" class="w-100 rounded-custom-lg">
+        <!-- Distinctive Interactive Loop Journey Stage Deck -->
+        <div class="row justify-content-center" id="loopStageDeck">
+          <div class="col-lg-11 col-xl-10">
+            <!-- Stage Selector Pills -->
+            <div class="hero-stage-selector" role="tablist">
+              <button class="stage-nav-pill active" type="button" data-stage="1" aria-selected="true">
+                <span class="fw-bold font-mono">01.</span> Scan &amp; Issue Pass
+              </button>
+              <button class="stage-nav-pill" type="button" data-stage="2" aria-selected="false">
+                <span class="fw-bold font-mono">02.</span> Auto Accrual &amp; Balance
+              </button>
+              <button class="stage-nav-pill" type="button" data-stage="3" aria-selected="false">
+                <span class="fw-bold font-mono">03.</span> VIP Perk Unlock
+              </button>
+              <button class="stage-nav-pill" type="button" data-stage="4" aria-selected="false">
+                <span class="fw-bold font-mono">04.</span> Automated Win-Back
+              </button>
+            </div>
+
+            <!-- Stage Content Deck -->
+            <div class="loop-stage-deck">
+              <!-- Stage 1 Panel -->
+              <div class="stage-panel active" id="stagePanel1">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1 font-heading fw-bold">Stage 01: Onboarding</span>
+                    <h2 class="h3 fw-bold mb-3">Instant Mobile Pass Issuance at Checkout</h2>
+                    <p class="text-muted mb-4">
+                      Customers scan a branded QR code at the counter or receipt. Within 10 seconds, an Apple or Google Wallet card is saved to their lock screen—no app downloads, passwords, or paperwork.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Onboarding Time</small>
+                        <strong class="text-primary-custom">&lt; 10 seconds</strong>
+                      </div>
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Pass Save Rate</small>
+                        <strong class="text-primary-custom">89% of scans</strong>
+                      </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary-custom btn-sm rounded-pill px-4">Test Pass Experience &rarr;</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="position-relative rounded-custom-lg overflow-hidden shadow-custom-sm">
+                      <img src="assets/images/services/service-repeat-purchases.jpg" alt="Customer scanning contactless loyalty pass at checkout" class="w-100" style="height: 280px; object-fit: cover;">
+                      <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-dark bg-opacity-75 text-white backdrop-blur">
+                        <small class="d-flex align-items-center gap-2"><i class="bi bi-shield-check text-primary"></i> Direct Apple Wallet &amp; Google Wallet Integration</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stage 2 Panel -->
+              <div class="stage-panel" id="stagePanel2">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1 font-heading fw-bold">Stage 02: Engagement</span>
+                    <h2 class="h3 fw-bold mb-3">Real-Time Points &amp; Tier Multipliers</h2>
+                    <p class="text-muted mb-4">
+                      Every in-store tap or online checkout auto-calculates points, applies active tier multipliers, and pushes an instant balance update directly to the customer's lock screen.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Balance Notification</small>
+                        <strong class="text-primary-custom">Instant Push</strong>
+                      </div>
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Repeat Velocity</small>
+                        <strong class="text-primary-custom">+4.1x Frequency</strong>
+                      </div>
+                    </div>
+                    <a href="features.html" class="btn btn-primary-custom btn-sm rounded-pill px-4">Explore Accrual Engine &rarr;</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="position-relative rounded-custom-lg overflow-hidden shadow-custom-sm">
+                      <img src="assets/images/services/service-digital-wallet.jpg" alt="Mobile digital pass points accrual notification" class="w-100" style="height: 280px; object-fit: cover;">
+                      <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-dark bg-opacity-75 text-white backdrop-blur">
+                        <small class="d-flex align-items-center gap-2"><i class="bi bi-stars text-primary"></i> Real-Time Multiplier &amp; Milestone Tracking</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stage 3 Panel -->
+              <div class="stage-panel" id="stagePanel3">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1 font-heading fw-bold">Stage 03: Gratification</span>
+                    <h2 class="h3 fw-bold mb-3">High-Value Perk Unlock &amp; Instant Claim</h2>
+                    <p class="text-muted mb-4">
+                      Attainable milestone rewards provide emotional satisfaction. Customers redeem digital vouchers with one tap at the POS counter or through automated checkout discounts.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Redemption Rate</small>
+                        <strong class="text-primary-custom">76.4% Claim Rate</strong>
+                      </div>
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Average Ticket Lift</small>
+                        <strong class="text-primary-custom">+24.6% Basket Size</strong>
+                      </div>
+                    </div>
+                    <a href="customer-rewards.html" class="btn btn-primary-custom btn-sm rounded-pill px-4">See Reward Structures &rarr;</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="position-relative rounded-custom-lg overflow-hidden shadow-custom-sm">
+                      <img src="assets/images/services/service-personalized-perks.jpg" alt="Barista fulfilling handcrafted reward voucher" class="w-100" style="height: 280px; object-fit: cover;">
+                      <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-dark bg-opacity-75 text-white backdrop-blur">
+                        <small class="d-flex align-items-center gap-2"><i class="bi bi-gift text-primary"></i> Sub-second In-Store POS Validation</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stage 4 Panel -->
+              <div class="stage-panel" id="stagePanel4">
+                <div class="row align-items-center g-4">
+                  <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1 font-heading fw-bold">Stage 04: Retention Loop</span>
+                    <h2 class="h3 fw-bold mb-3">Automated AI Win-Back &amp; Churn Defense</h2>
+                    <p class="text-muted mb-4">
+                      When a customer's visit cycle begins to lapse, smart triggers send tailored incentives to re-engage them before they switch to competitors, closing the perpetual retention loop.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Churn Reduction</small>
+                        <strong class="text-primary-custom">-38% Churn</strong>
+                      </div>
+                      <div class="p-2 px-3 bg-surface-alt rounded-custom-sm border-custom">
+                        <small class="text-muted d-block">Win-Back Success</small>
+                        <strong class="text-primary-custom">62% Re-order Rate</strong>
+                      </div>
+                    </div>
+                    <a href="retention-programs.html" class="btn btn-primary-custom btn-sm rounded-pill px-4">Explore Retention AI &rarr;</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="position-relative rounded-custom-lg overflow-hidden shadow-custom-sm">
+                      <img src="assets/images/services/service-retention-winback.jpg" alt="Customer receiving personalized win-back voucher" class="w-100" style="height: 280px; object-fit: cover;">
+                      <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-dark bg-opacity-75 text-white backdrop-blur">
+                        <small class="d-flex align-items-center gap-2"><i class="bi bi-arrow-repeat text-primary"></i> Perpetual Automated Customer Retention</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2: THE 7-STEP CIRCULAR LOYALTY LOOP -->
+    <!-- SECTION 2: STREAMLINED METHODOLOGY IN ACTION (4 PILLARS) -->
     <section class="section-padding bg-surface border-top border-custom">
       <div class="container">
         <div class="row justify-content-center text-center section-header">
@@ -173,67 +321,64 @@
           </div>
         </div>
 
-        <div class="row g-3 justify-content-center">
-          <!-- Step 1 -->
+        <div class="row g-4 justify-content-center">
+          <!-- Pillar 1 -->
           <div class="col-md-6 col-xl-3">
-            <div class="p-4 bg-surface-alt rounded-custom-lg border-custom h-100">
-              <span class="font-mono text-primary fw-bold fs-4 d-block mb-1">01. Discover</span>
-              <h3 class="h5 mb-2">Frictionless Onboarding</h3>
-              <p class="text-muted small mb-0">Shoppers join instantly via QR codes on receipts, table tents, SMS links, or POS checkout prompt.</p>
+            <div class="visual-service-card">
+              <div class="visual-service-thumb" style="height: 150px;">
+                <img src="assets/images/services/service-repeat-purchases.jpg" alt="Frictionless Onboarding">
+                <span class="visual-service-badge font-mono">01</span>
+              </div>
+              <div class="visual-service-body">
+                <h3 class="h5 mb-2">Frictionless Onboarding</h3>
+                <p class="text-muted small mb-3">Customers join in 10s via table tent, receipt QR, or checkout prompt without downloading an app.</p>
+                <span class="visual-service-tag"><i class="bi bi-qr-code text-primary"></i> 89% Adoption</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
+          <!-- Pillar 2 -->
           <div class="col-md-6 col-xl-3">
-            <div class="p-4 bg-surface-alt rounded-custom-lg border-custom h-100">
-              <span class="font-mono text-danger fw-bold fs-4 d-block mb-1">02. Purchase</span>
-              <h3 class="h5 mb-2">First Transaction</h3>
-              <p class="text-muted small mb-0">Customer completes their initial purchase and immediately receives an unexpected welcome bonus.</p>
+            <div class="visual-service-card">
+              <div class="visual-service-thumb" style="height: 150px;">
+                <img src="assets/images/services/service-digital-wallet.jpg" alt="Automated Points Accrual">
+                <span class="visual-service-badge font-mono">02</span>
+              </div>
+              <div class="visual-service-body">
+                <h3 class="h5 mb-2">Auto Points Accrual</h3>
+                <p class="text-muted small mb-3">Points calculate immediately at POS or ecommerce with real-time balance updates on lock screen passes.</p>
+                <span class="visual-service-tag"><i class="bi bi-stars text-primary"></i> Real-Time Multipliers</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 3 -->
+          <!-- Pillar 3 -->
           <div class="col-md-6 col-xl-3">
-            <div class="p-4 bg-surface-alt rounded-custom-lg border-custom h-100">
-              <span class="font-mono text-warning fw-bold fs-4 d-block mb-1">03. Earn</span>
-              <h3 class="h5 mb-2">Instant Points Accrual</h3>
-              <p class="text-muted small mb-0">Transparent progress displays on their mobile lock screen pass, celebrating point milestones.</p>
+            <div class="visual-service-card">
+              <div class="visual-service-thumb" style="height: 150px;">
+                <img src="assets/images/services/service-personalized-perks.jpg" alt="High-Value Milestone Unlocks">
+                <span class="visual-service-badge font-mono">03</span>
+              </div>
+              <div class="visual-service-body">
+                <h3 class="h5 mb-2">High-Value Perk Unlock</h3>
+                <p class="text-muted small mb-3">Attainable initial rewards provide instant gratification and ignite desire for higher tier status.</p>
+                <span class="visual-service-tag"><i class="bi bi-gift text-primary"></i> 76% Claim Velocity</span>
+              </div>
             </div>
           </div>
 
-          <!-- Step 4 -->
+          <!-- Pillar 4 -->
           <div class="col-md-6 col-xl-3">
-            <div class="p-4 bg-surface-alt rounded-custom-lg border-custom h-100">
-              <span class="font-mono text-success fw-bold fs-4 d-block mb-1">04. Reward</span>
-              <h3 class="h5 mb-2">High-Value Perk Unlock</h3>
-              <p class="text-muted small mb-0">Attainable initial rewards provide instant gratification and ignite the desire for subsequent tiers.</p>
-            </div>
-          </div>
-
-          <!-- Step 5 -->
-          <div class="col-md-6 col-xl-3">
-            <div class="p-4 bg-surface-alt rounded-custom-lg border-custom h-100">
-              <span class="font-mono text-info fw-bold fs-4 d-block mb-1">05. Return</span>
-              <h3 class="h5 mb-2">Fast Second Visit</h3>
-              <p class="text-muted small mb-0">Time-sensitive voucher reminders nudge shoppers back into your retail or dining location.</p>
-            </div>
-          </div>
-
-          <!-- Step 6 -->
-          <div class="col-md-6 col-xl-3">
-            <div class="p-4 bg-surface-alt rounded-custom-lg border-custom h-100">
-              <span class="font-mono text-primary fw-bold fs-4 d-block mb-1">06. Engage</span>
-              <h3 class="h5 mb-2">Personalized Push &amp; SMS</h3>
-              <p class="text-muted small mb-0">Smart triggers send birthday surprises, double-point weekends, and favorite-item suggestions.</p>
-            </div>
-          </div>
-
-          <!-- Step 7 -->
-          <div class="col-md-6 col-xl-6">
-            <div class="p-4 bg-primary text-white rounded-custom-lg h-100 d-flex flex-column justify-content-center shadow-custom-md">
-              <span class="font-mono fw-bold fs-4 d-block mb-1 opacity-75">07. Permanent Regular</span>
-              <h3 class="h4 mb-2 text-white">Repeat Purchase Advocacy</h3>
-              <p class="mb-0 text-white-50 small">Customer ascends to VIP status, shares referral passes with friends, and becomes an organic growth champion for your brand.</p>
+            <div class="visual-service-card">
+              <div class="visual-service-thumb" style="height: 150px;">
+                <img src="assets/images/services/service-retention-winback.jpg" alt="Perpetual Win-Back Advocacy">
+                <span class="visual-service-badge font-mono">04</span>
+              </div>
+              <div class="visual-service-body">
+                <h3 class="h5 mb-2">Perpetual Win-Back</h3>
+                <p class="text-muted small mb-3">Smart automation triggers surprise treats and referral passes before customers lapse, completing the loop.</p>
+                <span class="visual-service-tag"><i class="bi bi-arrow-repeat text-primary"></i> -38% Churn Defense</span>
+              </div>
             </div>
           </div>
         </div>
@@ -268,8 +413,11 @@
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <div class="p-2 bg-surface rounded-custom-xl border-custom shadow-custom-card">
-              <img src="assets/images/retail/retail-showcase.svg" alt="Retail In-Store POS Scan & Member Lookup Mockup">
+            <div class="position-relative overflow-hidden rounded-custom-xl border-custom shadow-custom-card">
+              <img src="assets/images/services/benefit-business-growth.jpg" alt="Retail In-Store POS Scan & Member Lookup" class="w-100" style="height: 340px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-dark bg-opacity-75 text-white">
+                <small class="d-flex align-items-center gap-2"><i class="bi bi-upc-scan text-primary"></i> Sub-second In-Store Barcode &amp; NFC Lookup</small>
+              </div>
             </div>
           </div>
         </div>
@@ -286,8 +434,11 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <div class="p-2 bg-surface rounded-custom-xl border-custom shadow-custom-card">
-              <img src="assets/images/retail/restaurant-showcase.svg" alt="Restaurant Table QR Dining Loyalty Mockup">
+            <div class="position-relative overflow-hidden rounded-custom-xl border-custom shadow-custom-card">
+              <img src="assets/images/services/service-personalized-perks.jpg" alt="Restaurant Table QR Dining Loyalty" class="w-100" style="height: 340px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 end-0 p-3 bg-dark bg-opacity-75 text-white">
+                <small class="d-flex align-items-center gap-2"><i class="bi bi-cup-hot text-primary"></i> Contactless Table Check-In &amp; Perk Redemption</small>
+              </div>
             </div>
           </div>
         </div>
@@ -311,7 +462,7 @@
                   <small class="text-muted">Repeat Purchase Velocity</small>
                 </div>
                 <div>
-                  <span class="font-mono fs-3 fw-bold text-accent-custom d-block">3.8x</span>
+                  <span class="font-mono fs-3 fw-bold text-primary-custom d-block">3.8x</span>
                   <small class="text-muted">VIP Customer LTV</small>
                 </div>
                 <div>
@@ -427,5 +578,30 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/gsap.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // Home 2 Interactive Loop Stage Deck Tab Switcher
+    document.addEventListener('DOMContentLoaded', function () {
+      const stagePills = document.querySelectorAll('.stage-nav-pill');
+      const stagePanels = document.querySelectorAll('.stage-panel');
+
+      stagePills.forEach(pill => {
+        pill.addEventListener('click', function () {
+          const stageId = this.getAttribute('data-stage');
+          stagePills.forEach(p => {
+            p.classList.remove('active');
+            p.setAttribute('aria-selected', 'false');
+          });
+          stagePanels.forEach(panel => panel.classList.remove('active'));
+
+          this.classList.add('active');
+          this.setAttribute('aria-selected', 'true');
+          const targetPanel = document.getElementById('stagePanel' + stageId);
+          if (targetPanel) {
+            targetPanel.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

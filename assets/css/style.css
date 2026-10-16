@@ -930,9 +930,36 @@ img, svg {
    -------------------------------------------------------------------------- */
 .hero-section {
   position: relative;
-  padding: clamp(3.5rem, 7vw, 6.5rem) 0;
+  min-height: clamp(580px, 72vh, 660px);
+  display: flex;
+  align-items: center;
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
   background: var(--grad-hero);
   overflow: hidden;
+}
+
+.hero-section > .container {
+  width: 100%;
+}
+
+/* Consistent Inner Page Hero / Header Section */
+.page-hero-section,
+.page-header-section,
+main > section:first-of-type.bg-surface-alt {
+  position: relative;
+  min-height: clamp(240px, 32vh, 300px);
+  display: flex;
+  align-items: center;
+  padding: clamp(3rem, 5vw, 4.25rem) 0;
+  background-color: var(--bg-surface-alt);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.page-hero-section > .container,
+.page-header-section > .container,
+main > section:first-of-type.bg-surface-alt > .container {
+  width: 100%;
 }
 
 .hero-glow-bg {
@@ -970,6 +997,161 @@ img, svg {
 /* --------------------------------------------------------------------------
    7. Cards & Visual Components
    -------------------------------------------------------------------------- */
+/* Visual Service Cards with High-Resolution Imagery */
+.visual-service-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.visual-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(79, 70, 229, 0.35);
+}
+
+.visual-service-thumb {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--bg-surface-alt);
+}
+
+.visual-service-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.visual-service-card:hover .visual-service-thumb img {
+  transform: scale(1.05);
+}
+
+.visual-service-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.03em;
+  z-index: 2;
+}
+
+.visual-service-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.visual-service-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-main);
+}
+
+.visual-service-body p {
+  font-size: 0.925rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.visual-service-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Home 2 Centered Command Deck & Interactive Loop Stages */
+.hero-stage-selector {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.stage-nav-pill {
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stage-nav-pill:hover {
+  color: var(--primary);
+  border-color: rgba(79, 70, 229, 0.4);
+  background-color: var(--primary-light);
+}
+
+.stage-nav-pill.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.loop-stage-deck {
+  position: relative;
+  border-radius: var(--radius-xl);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  padding: 1.75rem;
+}
+
+.stage-panel {
+  display: none;
+  animation: fadeInStage 0.35s ease forwards;
+}
+
+.stage-panel.active {
+  display: block;
+}
+
+@keyframes fadeInStage {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .feature-card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
@@ -2357,4 +2539,121 @@ select option,
     padding: 1.5rem 1.25rem 2rem 1.25rem;
   }
 }
+
+/* --------------------------------------------------------------------------
+   18. Mobile View (<= 576px & 360px) Dashboard & Container Overflow Fixes
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  .dashboard-content {
+    padding: 1rem 0.75rem 1.5rem 0.75rem !important;
+  }
+
+  .dashboard-content .p-4 {
+    padding: 1.15rem 1rem !important;
+  }
+
+  /* POS Code Verification Box responsive stacking */
+  .pos-verify-input-group {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.65rem !important;
+    width: 100% !important;
+  }
+
+  .pos-verify-input-group .form-control,
+  .pos-verify-input-group .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: var(--radius-md) !important;
+    margin-left: 0 !important;
+  }
+
+  /* General input group containment */
+  .dashboard-content .input-group {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .dashboard-content .input-group .form-control {
+    min-width: 0 !important;
+  }
+
+  /* Redemption Queue Filter Bar */
+  .redemption-filter-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 0.5rem !important;
+  }
+
+  .redemption-filter-wrap .form-control,
+  .redemption-filter-wrap .form-select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Table responsive wrapper containment */
+  .table-responsive {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-responsive .table {
+    min-width: 540px;
+    margin-bottom: 0;
+  }
+
+  /* Prevent any out-of-container blowout */
+  .dashboard-main,
+  .dashboard-content,
+  .metric-card {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-break: break-word;
+  }
+}
+
+/* Extra small mobile screens (360px viewport safety) */
+@media (max-width: 380px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  .dashboard-wrapper {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  .dashboard-content {
+    padding: 0.85rem 0.5rem 1.25rem 0.5rem !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .dashboard-content .p-4 {
+    padding: 0.95rem 0.75rem !important;
+  }
+
+  .metric-card {
+    padding: 0.95rem 0.75rem !important;
+  }
+
+  .metric-card .h2 {
+    font-size: 1.45rem !important;
+  }
+
+  .dashboard-mobile-bar {
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  .hero-section {
+    padding: 2.75rem 0 !important;
+    min-height: auto;
+  }
+}
+
 
